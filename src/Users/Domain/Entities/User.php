@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Users\Domain\Models;
+namespace src\Users\Domain\Entities;
 
 use src\Users\Domain\ValueObjects\UserId;
 
@@ -14,16 +14,17 @@ class User
     private string $password;
 
     public function __construct(
+        UserId $id,
         string $name,
         string $emailAddress,
         ?\DateTime $emailVerifiedAt,
         ?\DateTime $confirmedAt,
         string $password
     ) {
-        $this->name = $name;
+        $this->setId($id);
         $this->setEmailAddress($emailAddress);
-        $this->emailVerifiedAt = $emailVerifiedAt;
-        $this->confirmedAt = $confirmedAt;
+        $this->setEmailVerifiedAt($emailVerifiedAt);
+        $this->setConfirmedAt($confirmedAt);
         $this->setPassword($password);
     }
 
@@ -32,9 +33,19 @@ class User
         return $this->id;
     }
 
+    private function setId(UserId $userId): void
+    {
+        $this->id = $userId;
+    }
+
     public function getName(): string
     {
         return $this->name;
+    }
+
+    public function setName(string $name): void
+    {
+        $this->name = $name;
     }
 
     public function getEmailAddress(): string
@@ -58,9 +69,19 @@ class User
         return $this->emailVerifiedAt;
     }
 
+    private function setEmailVerifiedAt(?\DateTime $emailVerifiedAt): void
+    {
+        $this->emailVerifiedAt = $emailVerifiedAt;
+    }
+
     public function getConfirmedAt(): ?\DateTime
     {
         return $this->confirmedAt;
+    }
+
+    private function setConfirmedAt(?\DateTime $confirmedAt): void
+    {
+        $this->confirmedAt = $confirmedAt;
     }
 
     public function getPassword(): string

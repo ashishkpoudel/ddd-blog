@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 use Illuminate\Log\Logger;
 use src\Posts\Domain\Commands\CreatePost;
 use src\Posts\Domain\Exceptions\CannotCreatePostException;
-use src\Posts\Domain\Models\Post;
+use src\Posts\Domain\Entities\Post;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
 class CreatePostHandler

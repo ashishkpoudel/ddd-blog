@@ -3,7 +3,7 @@
 namespace src\Posts\Infrastructure\Eloquent\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Posts\Domain\Models\Post;
+use src\Posts\Domain\Entities\Post;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 use src\Posts\Domain\ValueObjects\PostId;
 use src\Posts\Infrastructure\Eloquent\Mappers\PostMapper;

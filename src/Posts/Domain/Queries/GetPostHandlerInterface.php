@@ -2,7 +2,7 @@
 
 namespace src\Posts\Domain\Queries;
 
-use src\Posts\Domain\Models\Post;
+use src\Posts\Domain\Entities\Post;
 
 interface GetPostHandlerInterface
 {

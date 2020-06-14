@@ -2,7 +2,7 @@
 
 namespace src\Users\Application\Queries;
 
-use src\Users\Domain\Models\User;
+use src\Users\Domain\Entities\User;
 use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
 use src\Users\Domain\Queries\GetUserAuthTokenByEmailHandlerInterface;
 use Illuminate\Config\Repository as Config;

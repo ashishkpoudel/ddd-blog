@@ -2,7 +2,7 @@
 
 namespace src\Users\Infrastructure\Eloquent\Mappers;
 
-use src\Users\Domain\Models\User;
+use src\Users\Domain\Entities\User;
 use src\Users\Domain\ValueObjects\UserId;
 
 class UserMapper
