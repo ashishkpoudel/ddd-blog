@@ -33,4 +33,9 @@ class Identity
     {
         return new static($id);
     }
+
+    final public function equals(self $identity): bool
+    {
+        return $this->getValue() === $identity->getValue();
+    }
 }

@@ -3,6 +3,7 @@
 namespace src\Posts\Domain\Entities;
 
 use src\Posts\Domain\ValueObjects\PostId;
+use src\Posts\Domain\ValueObjects\TagId;
 use src\Users\Domain\ValueObjects\UserId;
 
 class Post
@@ -14,13 +15,17 @@ class Post
     private UserId $userId;
     private ?\DateTime $publishedAt;
 
+    /** @var Tag[] */
+    private array $tags = [];
+
     public function __construct(
         PostId $id,
         string $title,
         string $slug,
         string $body,
         UserId $userId,
-        ?\DateTime $publishedAt
+        ?\DateTime $publishedAt,
+        Tag ...$tags
     ) {
         $this->setId($id);
         $this->setTitle($title);
@@ -28,6 +33,7 @@ class Post
         $this->setBody($body);
         $this->setUserId($userId);
         $this->setPublishedAt($publishedAt);
+        $this->setTags($tags);
     }
 
     public function markAsPublished()
@@ -38,6 +44,21 @@ class Post
     public function markAsUnpublished()
     {
         $this->publishedAt = null;
+    }
+
+    public function addTag(Tag $tag): void
+    {
+        $this->tags[] = $tag;
+    }
+
+    public function removeTag(TagId $tagId): void
+    {
+        foreach ($this->tags as $index => $tag) {
+            if ($tag->getId()->equals($tagId)) {
+                unset($this->tags[$index]);
+                break;
+            }
+        }
     }
 
     public function getId(): PostId
@@ -116,5 +137,18 @@ class Post
     private function setPublishedAt(?\DateTime $publishedAt): void
     {
         $this->publishedAt = $publishedAt;
+    }
+
+    /**
+     * @return Tag[]
+     */
+    public function getTags(): array
+    {
+        return $this->tags;
+    }
+
+    private function setTags(Tag ...$tags): void
+    {
+        $this->tags = $tags;
     }
 }

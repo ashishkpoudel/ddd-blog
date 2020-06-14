@@ -2,29 +2,29 @@
 
 namespace src\Users\Application\Queries;
 
-use src\Users\Domain\Entities\User;
-use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
-use src\Users\Domain\Queries\GetUserAuthTokenByEmailHandlerInterface;
 use Illuminate\Config\Repository as Config;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Tymon\JWTAuth\JWT;
+use src\Users\Domain\Repositories\UserRepositoryInterface;
+use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
 
-class GetUserAuthTokenByEmailHandler implements GetUserAuthTokenByEmailHandlerInterface
+class GetUserAuthTokenByEmailHandler
 {
     private JWT $jwt;
     private Config $config;
+    private UserRepositoryInterface $userRepository;
 
-    public function __construct(JWT $jwt, Config $config)
+    public function __construct(JWT $jwt, Config $config, UserRepositoryInterface $userRepository)
     {
         $this->jwt = $jwt;
         $this->config = $config;
+        $this->userRepository = $userRepository;
     }
-
 
     public function handle(GetUserAuthTokenByEmail $query): array
     {
         /** @var $user JWTSubject */
-        $user = User::query()->where('emailAddress', '=', $query->emailAddress)->first();
+        $user = $this->userRepository->findByEmailAddress($query->emailAddress);
 
         return [
             'accessToken' => $this->jwt->fromUser($user),

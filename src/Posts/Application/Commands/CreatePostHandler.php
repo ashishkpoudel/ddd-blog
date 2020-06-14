@@ -29,6 +29,7 @@ class CreatePostHandler
                 'title' => $command->title,
                 'slug' => Str::slug($command->title),
                 'body' => $command->body,
+                'tagIds' => $command->tagIds,
             ]);
 
             $this->postRepository->save($post);

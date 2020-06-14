@@ -58,6 +58,7 @@ class EloquentUserRepository implements UserRepositoryInterface
             $model->update(
                 UserMapper::toPersistence($user)
             );
+            return;
         }
 
         $this->query()->create(

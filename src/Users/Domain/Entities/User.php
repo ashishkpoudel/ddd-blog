@@ -22,6 +22,7 @@ class User
         string $password
     ) {
         $this->setId($id);
+        $this->setName($name);
         $this->setEmailAddress($emailAddress);
         $this->setEmailVerifiedAt($emailVerifiedAt);
         $this->setConfirmedAt($confirmedAt);

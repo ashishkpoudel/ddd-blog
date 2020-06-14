@@ -3,6 +3,7 @@
 namespace src\Posts\Infrastructure\Eloquent\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class PostModel extends Model
 {
@@ -13,4 +14,14 @@ class PostModel extends Model
     protected $casts = [
         'id' => 'string'
     ];
+
+    public function tags(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            TagModel::class,
+            'post_tag',
+            'postId',
+            'tagId'
+        );
+    }
 }

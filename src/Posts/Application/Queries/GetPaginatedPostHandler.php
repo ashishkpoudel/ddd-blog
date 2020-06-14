@@ -4,10 +4,9 @@ namespace src\Posts\Application\Queries;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use src\Posts\Domain\Queries\GetPaginatedPost;
-use src\Posts\Domain\Queries\GetPaginatedPostHandlerInterface;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
-class GetPaginatedPostHandler implements GetPaginatedPostHandlerInterface
+class GetPaginatedPostHandler
 {
     private PostRepositoryInterface $postRepository;
 

@@ -16,7 +16,9 @@ use src\Posts\Domain\Queries\GetPost;
 use src\Posts\Application\Queries\GetPaginatedPostHandler;
 use src\Posts\Application\Queries\GetPostHandler;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
+use src\Posts\Domain\Repositories\TagRepositoryInterface;
 use src\Posts\Infrastructure\Eloquent\Repositories\EloquentPostRepository;
+use src\Posts\Infrastructure\Eloquent\Repositories\EloquentTagRepository;
 
 class PostServiceProvider extends ServiceProvider
 {
@@ -42,5 +44,6 @@ class PostServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(PostRepositoryInterface::class, EloquentPostRepository::class);
+        $this->app->bind(TagRepositoryInterface::class, EloquentTagRepository::class);
     }
 }
