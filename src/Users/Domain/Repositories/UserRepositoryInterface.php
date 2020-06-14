@@ -14,5 +14,7 @@ interface UserRepositoryInterface
 
     public function findOrFailById(UserId $userId): User;
 
+    public function findByEmailAddress(string $emailAddress): ?User;
+
     public function save(User $user): void;
 }

@@ -31,12 +31,23 @@ class EloquentUserRepository implements UserRepositoryInterface
             return null;
         }
 
-        return UserMapper::toDomain($user);
+        return UserMapper::toDomain($user->toArray());
     }
 
     public function findOrFailById(UserId $userId): User
     {
-        return UserMapper::toDomain($this->query()->findOrFail($userId->getValue()));
+        return UserMapper::toDomain($this->query()->findOrFail($userId->getValue())->toArray());
+    }
+
+    public function findByEmailAddress(string $emailAddress): ?User
+    {
+        $user = $this->query()->where('emailAddress', '=', $emailAddress)->first();
+
+        if (!$user) {
+            return null;
+        }
+
+        return UserMapper::toDomain($user->toArray());
     }
 
     public function save(User $user): void

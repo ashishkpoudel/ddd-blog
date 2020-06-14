@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef8afdcc-4a38-4fe2-a494-4247d90d54c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ddd-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ddd-blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Commands/DeletePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/Commands/DeletePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Commands/UpdatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/Commands/UpdatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Application/Services/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/Services/AuthService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Users/Domain/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/UserServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/UserServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Repositories/UserRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Repositories/UserRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +169,7 @@
       <workItem from="1591836381179" duration="266000" />
       <workItem from="1591899575212" duration="3205000" />
       <workItem from="1592090179211" duration="5530000" />
-      <workItem from="1592110259492" duration="2399000" />
+      <workItem from="1592110259492" duration="4119000" />
     </task>
     <servers />
   </component>

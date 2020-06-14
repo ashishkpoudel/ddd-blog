@@ -21,10 +21,10 @@ class User
         string $password
     ) {
         $this->name = $name;
-        $this->emailAddress = $emailAddress;
+        $this->setEmailAddress($emailAddress);
         $this->emailVerifiedAt = $emailVerifiedAt;
         $this->confirmedAt = $confirmedAt;
-        $this->password = $password;
+        $this->setPassword($password);
     }
 
     public function getId(): UserId
@@ -42,6 +42,17 @@ class User
         return $this->emailAddress;
     }
 
+    private function setEmailAddress(string $emailAddress)
+    {
+        if (!filter_var($emailAddress, FILTER_VALIDATE_EMAIL)) {
+            throw new \InvalidArgumentException(
+                'Invalid email address'
+            );
+        }
+
+        $this->emailAddress = $emailAddress;
+    }
+
     public function getEmailVerifiedAt(): ?\DateTime
     {
         return $this->emailVerifiedAt;
@@ -55,5 +66,16 @@ class User
     public function getPassword(): string
     {
         return $this->password;
+    }
+
+    private function setPassword(string $password): void
+    {
+        if (strlen($password) < 6) {
+            throw new \InvalidArgumentException(
+                'Password must be greater than or equal to 6 character long'
+            );
+        }
+
+        $this->password = $password;
     }
 }
