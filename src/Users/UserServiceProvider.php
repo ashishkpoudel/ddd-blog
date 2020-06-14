@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
 use src\Users\Application\Queries\GetUserAuthTokenByEmailHandler;
+use src\Users\Domain\Repositories\UserRepositoryInterface;
+use src\Users\Infrastructure\Eloquent\Repositories\EloquentUserRepository;
 
 class UserServiceProvider extends ServiceProvider
 {
@@ -19,5 +21,10 @@ class UserServiceProvider extends ServiceProvider
         Bus::map($this->queries);
 
         Route::prefix('api')->middleware('api')->group(base_path('src/Users/Infrastructure/routes.php'));
+    }
+
+    public function register()
+    {
+        $this->app->bind(UserRepositoryInterface::class, EloquentUserRepository::class);
     }
 }

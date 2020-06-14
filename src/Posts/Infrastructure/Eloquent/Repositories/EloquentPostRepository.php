@@ -43,7 +43,7 @@ class EloquentPostRepository implements PostRepositoryInterface
 
     public function save(Post $post): void
     {
-        $model = $this->query()->find($post->id->getValue());
+        $model = $this->query()->find($post->getId()->getValue());
 
         if ($model) {
             $model->update(

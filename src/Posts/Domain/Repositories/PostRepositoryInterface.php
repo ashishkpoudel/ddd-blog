@@ -10,9 +10,9 @@ interface PostRepositoryInterface
 {
     public function query(): Builder;
 
-    public function save(Post $post): void;
-
     public function findById(PostId $postId): ?Post;
 
     public function findByIdOrFail(PostId $postId): Post;
+
+    public function save(Post $post): void;
 }

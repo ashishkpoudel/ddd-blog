@@ -5,24 +5,26 @@ namespace src\Posts\Application\Commands;
 use Illuminate\Log\Logger;
 use src\Posts\Domain\Commands\DeletePost;
 use src\Posts\Domain\Exceptions\CannotDeletePostException;
-use src\Posts\Domain\Models\PostModel;
+use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
 class DeletePostHandler
 {
     private Logger $logger;
+    private PostRepositoryInterface $postRepository;
 
-    public function __construct(Logger $logger)
+    public function __construct(Logger $logger, PostRepositoryInterface $postRepository)
     {
         $this->logger = $logger;
+        $this->postRepository = $postRepository;
     }
 
     public function handle(DeletePost $command): void
     {
         try {
-            $post = PostModel::query()->findOrFail($command->postId->getValue());
+            $post = $this->postRepository->query()->findOrFail($command->postId->getValue());
             $post->delete();
         } catch (\Exception $exception) {
-            $this->logger->error($exception->getMessage(), $exception->getTraceAsString());
+            $this->logger->error($exception->getMessage(), $exception->getTrace());
             throw new CannotDeletePostException(
                 'Unable to delete post'
             );

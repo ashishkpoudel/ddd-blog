@@ -2,26 +2,58 @@
 
 namespace src\Users\Domain\Models;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Tymon\JWTAuth\Contracts\JWTSubject;
+use src\Users\Domain\ValueObjects\UserId;
 
-class User extends Authenticatable implements JWTSubject
+class User
 {
-    const TABLE = 'users';
+    private UserId $id;
+    private string $name;
+    private string $emailAddress;
+    private ?\DateTime $emailVerifiedAt;
+    private ?\DateTime $confirmedAt;
+    private string $password;
 
-    public $table = self::TABLE;
-
-    protected $casts = [
-        'id' => 'string'
-    ];
-
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
+    public function __construct(
+        string $name,
+        string $emailAddress,
+        ?\DateTime $emailVerifiedAt,
+        ?\DateTime $confirmedAt,
+        string $password
+    ) {
+        $this->name = $name;
+        $this->emailAddress = $emailAddress;
+        $this->emailVerifiedAt = $emailVerifiedAt;
+        $this->confirmedAt = $confirmedAt;
+        $this->password = $password;
     }
 
-    public function getJWTCustomClaims()
+    public function getId(): UserId
     {
-        return [];
+        return $this->id;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getEmailAddress(): string
+    {
+        return $this->emailAddress;
+    }
+
+    public function getEmailVerifiedAt(): ?\DateTime
+    {
+        return $this->emailVerifiedAt;
+    }
+
+    public function getConfirmedAt(): ?\DateTime
+    {
+        return $this->confirmedAt;
+    }
+
+    public function getPassword(): string
+    {
+        return $this->password;
     }
 }

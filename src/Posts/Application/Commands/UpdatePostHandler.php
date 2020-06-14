@@ -6,21 +6,23 @@ use Illuminate\Log\Logger;
 use Illuminate\Support\Str;
 use src\Posts\Domain\Commands\UpdatePost;
 use src\Posts\Domain\Exceptions\CannotUpdatePostException;
-use src\Posts\Domain\Models\PostModel;
+use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
 class UpdatePostHandler
 {
     public Logger $logger;
+    private PostRepositoryInterface $postRepository;
 
-    public function __construct(Logger $logger)
+    public function __construct(Logger $logger, PostRepositoryInterface $postRepository)
     {
         $this->logger = $logger;
+        $this->postRepository = $postRepository;
     }
 
     public function handle(UpdatePost $command): void
     {
         try {
-            $post = PostModel::query()->findOrFail($command->postId->getValue());
+            $post = $this->postRepository->query()->findOrFail($command->postId->getValue());
 
             if ($command->title !== null) {
                 $post->title = $command->title;
@@ -33,7 +35,7 @@ class UpdatePostHandler
 
             $post->save();
         } catch (\Exception $exception) {
-            $this->logger->error($exception->getMessage(), $exception->getTraceAsString());
+            $this->logger->error($exception->getMessage(), $exception->getTrace());
             throw new CannotUpdatePostException(
                 'Unable to update post'
             );

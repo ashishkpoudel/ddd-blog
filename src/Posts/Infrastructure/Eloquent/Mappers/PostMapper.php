@@ -8,7 +8,7 @@ use src\Users\Domain\ValueObjects\UserId;
 
 class PostMapper
 {
-    public static function toDomain(array $data): Post
+    public static function toDomain(array $data = []): Post
     {
         return app(Post::class, [
             'id' => PostId::fromString($data['id']),

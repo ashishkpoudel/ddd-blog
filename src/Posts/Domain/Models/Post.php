@@ -12,19 +12,32 @@ class Post
     private string $slug;
     private string $body;
     private UserId $userId;
+    private ?\DateTime $publishedAt;
 
     public function __construct(
         PostId $id,
         string $title,
         string $slug,
         string $body,
-        UserId $userId
+        UserId $userId,
+        ?\DateTime $publishedAt
     ) {
         $this->id = $id;
         $this->title = $title;
         $this->slug = $slug;
         $this->body = $body;
         $this->userId = $userId;
+        $this->publishedAt = $publishedAt;
+    }
+
+    public function markAsPublished()
+    {
+        $this->publishedAt = new \DateTime();
+    }
+
+    public function markAsUnpublished()
+    {
+        $this->publishedAt = null;
     }
 
     public function getId(): PostId
@@ -50,5 +63,10 @@ class Post
     public function getUserId(): UserId
     {
         return $this->userId;
+    }
+
+    public function getPublishedAt(): ?\DateTime
+    {
+        return $this->publishedAt;
     }
 }

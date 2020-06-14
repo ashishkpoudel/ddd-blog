@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => src\Users\Infrastructure\,
+            'model' => '',
         ],
 
         // 'users' => [
