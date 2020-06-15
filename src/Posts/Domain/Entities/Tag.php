@@ -4,7 +4,7 @@ namespace src\Posts\Domain\Entities;
 
 use src\Posts\Domain\ValueObjects\TagId;
 
-class Tag
+class Tag implements TagInterface
 {
     private TagId $id;
     private string $name;

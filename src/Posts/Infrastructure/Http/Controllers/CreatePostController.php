@@ -26,7 +26,7 @@ final class CreatePostController extends BaseController
                 'userId' => $userId,
                 'title' => $request->input('title'),
                 'body' => $request->input('body'),
-                'tagIds' => $request->input('tagIds'),
+                'tagIds' => $tagIds,
             ])
         );
 

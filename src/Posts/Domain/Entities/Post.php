@@ -6,7 +6,7 @@ use src\Posts\Domain\ValueObjects\PostId;
 use src\Posts\Domain\ValueObjects\TagId;
 use src\Users\Domain\ValueObjects\UserId;
 
-class Post
+class Post implements PostInterface
 {
     private PostId $id;
     private string $title;

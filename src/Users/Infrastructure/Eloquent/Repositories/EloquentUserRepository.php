@@ -4,6 +4,7 @@ namespace src\Users\Infrastructure\Eloquent\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
 use src\Users\Domain\Entities\User;
+use src\Users\Domain\Entities\UserInterface;
 use src\Users\Domain\Repositories\UserRepositoryInterface;
 use src\Users\Domain\ValueObjects\UserId;
 use src\Users\Infrastructure\Eloquent\Mappers\UserMapper;
@@ -23,7 +24,7 @@ class EloquentUserRepository implements UserRepositoryInterface
         return $this->userModel->newQuery();
     }
 
-    public function findById(UserId $userId): ?User
+    public function findById(UserId $userId): ?UserInterface
     {
         $user = $this->query()->find($userId->getValue());
 
@@ -34,12 +35,12 @@ class EloquentUserRepository implements UserRepositoryInterface
         return UserMapper::toDomain($user->toArray());
     }
 
-    public function findOrFailById(UserId $userId): User
+    public function findOrFailById(UserId $userId): UserInterface
     {
         return UserMapper::toDomain($this->query()->findOrFail($userId->getValue())->toArray());
     }
 
-    public function findByEmailAddress(string $emailAddress): ?User
+    public function findByEmailAddress(string $emailAddress): ?UserInterface
     {
         $user = $this->query()->where('emailAddress', '=', $emailAddress)->first();
 

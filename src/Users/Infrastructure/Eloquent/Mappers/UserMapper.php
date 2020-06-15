@@ -3,11 +3,12 @@
 namespace src\Users\Infrastructure\Eloquent\Mappers;
 
 use src\Users\Domain\Entities\User;
+use src\Users\Domain\Entities\UserInterface;
 use src\Users\Domain\ValueObjects\UserId;
 
 class UserMapper
 {
-    public static function toDomain(array $data = [])
+    public static function toDomain(array $data = []): UserInterface
     {
         return app(User::class, [
             'id' => UserId::fromString($data['id']),

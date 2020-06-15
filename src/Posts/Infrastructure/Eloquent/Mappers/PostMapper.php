@@ -3,12 +3,13 @@
 namespace src\Posts\Infrastructure\Eloquent\Mappers;
 
 use src\Posts\Domain\Entities\Post;
+use src\Posts\Domain\Entities\PostInterface;
 use src\Posts\Domain\ValueObjects\PostId;
 use src\Users\Domain\ValueObjects\UserId;
 
 class PostMapper
 {
-    public static function toDomain(array $data = []): Post
+    public static function toDomain(array $data = []): PostInterface
     {
         return app(Post::class, [
             'id' => PostId::fromString($data['id']),
