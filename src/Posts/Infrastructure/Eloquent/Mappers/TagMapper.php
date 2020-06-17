@@ -2,7 +2,7 @@
 
 namespace src\Posts\Infrastructure\Eloquent\Mappers;
 
-use src\Posts\Domain\Entities\Tag;
+use src\Posts\Domain\Models\Tag;
 use src\Posts\Domain\ValueObjects\TagId;
 
 class TagMapper

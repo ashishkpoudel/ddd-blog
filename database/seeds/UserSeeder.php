@@ -12,6 +12,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        factory(UserModel::class)->create(['emailAddress' => 'admin@localhost', 'password' => bcrypt('123456')]);
+        factory(UserModel::class)->create(['emailAddress' => 'admin@localhost.local', 'password' => bcrypt('secret')]);
     }
 }

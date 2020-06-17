@@ -2,7 +2,7 @@
 
 namespace src\Posts\Domain\Commands;
 
-use src\Posts\Domain\Entities\Tag;
+use src\Posts\Domain\Models\Tag;
 use src\Posts\Domain\ValueObjects\PostId;
 use src\Users\Domain\ValueObjects\UserId;
 use src\Core\Bus\Command\CommandInterface;

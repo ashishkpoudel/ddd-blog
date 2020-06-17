@@ -3,8 +3,7 @@
 namespace src\Posts\Domain\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Posts\Domain\Entities\Post;
-use src\Posts\Domain\Entities\PostInterface;
+use src\Posts\Domain\Models\PostInterface;
 use src\Posts\Domain\ValueObjects\PostId;
 
 interface PostRepositoryInterface
@@ -15,5 +14,5 @@ interface PostRepositoryInterface
 
     public function findByIdOrFail(PostId $postId): PostInterface;
 
-    public function save(Post $post): void;
+    public function save(PostInterface $post): void;
 }

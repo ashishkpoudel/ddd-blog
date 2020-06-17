@@ -3,7 +3,7 @@
 namespace src\Posts\Domain\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Posts\Domain\Entities\Tag;
+use src\Posts\Domain\Models\Tag;
 
 interface TagRepositoryInterface
 {

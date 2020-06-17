@@ -3,7 +3,7 @@
 namespace src\Posts\Domain\Commands;
 
 use src\Core\Bus\Command\CommandInterface;
-use src\Posts\Domain\Entities\Tag;
+use src\Posts\Domain\Models\Tag;
 use src\Posts\Domain\ValueObjects\PostId;
 
 class UpdatePost implements CommandInterface

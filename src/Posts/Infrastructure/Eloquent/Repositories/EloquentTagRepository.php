@@ -3,7 +3,7 @@
 namespace src\Posts\Infrastructure\Eloquent\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Posts\Domain\Entities\Tag;
+use src\Posts\Domain\Models\Tag;
 use src\Posts\Domain\Repositories\TagRepositoryInterface;
 use src\Posts\Infrastructure\Eloquent\Mappers\TagMapper;
 use src\Posts\Infrastructure\Eloquent\Models\TagModel;

@@ -2,7 +2,7 @@
 
 namespace src\Posts\Application\Queries;
 
-use src\Posts\Domain\Entities\Post;
+use src\Posts\Domain\Models\Post;
 use src\Posts\Domain\Queries\GetPost;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 

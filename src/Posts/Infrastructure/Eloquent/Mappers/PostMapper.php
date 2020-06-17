@@ -2,8 +2,8 @@
 
 namespace src\Posts\Infrastructure\Eloquent\Mappers;
 
-use src\Posts\Domain\Entities\Post;
-use src\Posts\Domain\Entities\PostInterface;
+use src\Posts\Domain\Models\Post;
+use src\Posts\Domain\Models\PostInterface;
 use src\Posts\Domain\ValueObjects\PostId;
 use src\Users\Domain\ValueObjects\UserId;
 

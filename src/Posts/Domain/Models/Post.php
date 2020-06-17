@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Posts\Domain\Entities;
+namespace src\Posts\Domain\Models;
 
 use src\Posts\Domain\ValueObjects\PostId;
 use src\Posts\Domain\ValueObjects\TagId;
@@ -36,17 +36,17 @@ class Post implements PostInterface
         $this->setTags($tags);
     }
 
-    public function markAsPublished()
+    public function markAsPublished(): void
     {
         $this->publishedAt = new \DateTime();
     }
 
-    public function markAsUnpublished()
+    public function markAsUnpublished(): void
     {
         $this->publishedAt = null;
     }
 
-    public function addTag(Tag $tag): void
+    public function addTag(TagInterface $tag): void
     {
         $this->tags[] = $tag;
     }

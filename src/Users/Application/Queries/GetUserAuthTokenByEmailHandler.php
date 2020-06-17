@@ -3,7 +3,7 @@
 namespace src\Users\Application\Queries;
 
 use Illuminate\Config\Repository as Config;
-use Tymon\JWTAuth\Contracts\JWTSubject;
+use src\Users\Domain\Models\UserJwtSubject;
 use Tymon\JWTAuth\JWT;
 use src\Users\Domain\Repositories\UserRepositoryInterface;
 use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
@@ -23,11 +23,10 @@ class GetUserAuthTokenByEmailHandler
 
     public function handle(GetUserAuthTokenByEmail $query): array
     {
-        /** @var $user JWTSubject */
         $user = $this->userRepository->findByEmailAddress($query->emailAddress);
 
         return [
-            'accessToken' => $this->jwt->fromUser($user),
+            'accessToken' => $this->jwt->fromSubject(new UserJwtSubject($user->getId()->getValue())),
             'tokenType' => 'Bearer',
             'expiresIn' => $this->config->get('jwt.ttl') * 60,
         ];

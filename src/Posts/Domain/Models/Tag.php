@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Posts\Domain\Entities;
+namespace src\Posts\Domain\Models;
 
 use src\Posts\Domain\ValueObjects\TagId;
 

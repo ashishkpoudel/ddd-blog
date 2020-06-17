@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Users\Domain\Entities;
+namespace src\Users\Domain\Models;
 
 use src\Users\Domain\ValueObjects\UserId;
 
@@ -44,7 +44,7 @@ class User implements UserInterface
         return $this->name;
     }
 
-    public function setName(string $name): void
+    private function setName(string $name): void
     {
         $this->name = $name;
     }

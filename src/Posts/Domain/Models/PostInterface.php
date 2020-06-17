@@ -1,8 +1,9 @@
 <?php
 
-namespace src\Posts\Domain\Entities;
+namespace src\Posts\Domain\Models;
 
 use src\Posts\Domain\ValueObjects\PostId;
+use src\Posts\Domain\ValueObjects\TagId;
 use src\Users\Domain\ValueObjects\UserId;
 
 interface PostInterface
@@ -16,4 +17,9 @@ interface PostInterface
 
     /** @return Tag[] */
     public function getTags(): array;
+
+    public function markAsPublished(): void;
+    public function markAsUnpublished(): void;
+    public function addTag(TagInterface $tag): void;
+    public function removeTag(TagId $tag): void;
 }

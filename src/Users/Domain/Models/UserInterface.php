@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Users\Domain\Entities;
+namespace src\Users\Domain\Models;
 
 use src\Users\Domain\ValueObjects\UserId;
 

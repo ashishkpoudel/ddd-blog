@@ -15,6 +15,7 @@
         "laminas/laminas-hydrator": "^3.0",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
+        "symfony/uid": "^5.1",
         "tymon/jwt-auth": "^1.0"
     },
     "require-dev": {
