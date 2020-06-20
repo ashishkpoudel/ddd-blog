@@ -2,6 +2,7 @@
 
 namespace src\Posts\Application\QueryHandlers;
 
+use src\Core\Support\PaginatedResult;
 use src\Posts\Domain\Queries\GetPaginatedPost;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 use src\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
@@ -29,9 +30,10 @@ final class GetPaginatedPostHandler
             $postQuery->where('slug', 'like', '%' . $query->query->filters['slug'] . '%');
         }
 
-        return $postQuery->get()
-            ->map(function($post) {
-                return PostMapper::toDomain($post->toArray());
-            });
+        $result = $postQuery->paginate();
+
+        return app(PaginatedResult::class, [
+           'items' => collect($result->items())->map(fn($post) => PostMapper::toDomain($post->toArray()))->toArray(),
+        ]);
     }
 }

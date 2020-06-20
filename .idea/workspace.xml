@@ -3,63 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ef8afdcc-4a38-4fe2-a494-4247d90d54c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Bus/Command/CommandBus.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Bus/Command/CommandBus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Bus/Event/EventBus.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Bus/Event/EventBus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Bus/Query/QueryBus.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Bus/Query/QueryBus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/CreatedResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/CreatedResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/DeletedResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/DeletedResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/EmptyResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/EmptyResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/ForbiddenResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/ForbiddenResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/JsonResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/JsonResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/NotFoundResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/NotFoundResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/OkResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/OkResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/UnauthorizedResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/UnauthorizedResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Http/Response/UpdatedResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Http/Response/UpdatedResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Support/QueryOptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Support/QueryOptions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ValueObjects/Identity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ValueObjects/Identity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Commands/CreatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Commands/DeletePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Commands/PublishPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/PublishPostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Commands/UpdatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Queries/GetPaginatedPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Queries/GetPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/CreatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/CreatePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/DeletePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/DeletePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/PublishPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/PublishPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Events/PostPublished.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Events/PostPublished.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Events/PostUnpublished.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Events/PostUnpublished.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/CannotCreatePostException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/CannotCreatePostException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/CannotDeletePostException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/CannotDeletePostException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/CannotUpdatePostException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/CannotUpdatePostException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/PostException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/PostException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Queries/GetPaginatedPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Queries/GetPaginatedPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Queries/GetPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Queries/GetPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/ValueObjects/PostId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/ValueObjects/PostId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/ValueObjects/TagId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/ValueObjects/TagId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/TagMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/TagMapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/PostModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/PostModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/TagModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/TagModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Requests/PostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Requests/PostRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/PostServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/PostServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Application/Queries/GetUserAuthTokenByEmailHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/QueryHandlers/GetUserAuthTokenByEmailHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Application/Services/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/Services/AuthService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Models/UserJwtSubject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Models/UserJwtSubject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Queries/GetUserAuthTokenByEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Queries/GetUserAuthTokenByEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/ValueObjects/UserId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/ValueObjects/UserId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Controllers/UserLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Controllers/UserLoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Mappers/UserMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Mappers/UserMapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Requests/LoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Requests/LoginRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/UserServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/UserServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/GetPostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/GetPostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +183,7 @@
       <workItem from="1592348878413" duration="3607000" />
       <workItem from="1592411449507" duration="3849000" />
       <workItem from="1592479619523" duration="4078000" />
-      <workItem from="1592648185971" duration="5627000" />
+      <workItem from="1592648185971" duration="8696000" />
     </task>
     <servers />
   </component>
