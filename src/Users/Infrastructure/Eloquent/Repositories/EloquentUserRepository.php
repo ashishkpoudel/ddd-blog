@@ -10,7 +10,7 @@ use src\Users\Domain\ValueObjects\UserId;
 use src\Users\Infrastructure\Eloquent\Mappers\UserMapper;
 use src\Users\Infrastructure\Eloquent\Models\UserModel;
 
-class EloquentUserRepository implements UserRepositoryInterface
+final class EloquentUserRepository implements UserRepositoryInterface
 {
     private UserModel $userModel;
 

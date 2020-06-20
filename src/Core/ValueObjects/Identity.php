@@ -4,7 +4,7 @@ namespace src\Core\ValueObjects;
 
 use Symfony\Component\Uid\Uuid;
 
-class Identity
+abstract class Identity
 {
     private string $id;
 

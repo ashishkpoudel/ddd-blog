@@ -1,14 +1,14 @@
 <?php
 
-namespace src\Users\Application\Queries;
+namespace src\Users\Application\QueryHandlers;
 
 use Illuminate\Config\Repository as Config;
-use src\Users\Domain\Models\UserJwtSubject;
 use Tymon\JWTAuth\JWT;
 use src\Users\Domain\Repositories\UserRepositoryInterface;
 use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
+use src\Users\Domain\Models\UserJwtSubject;
 
-class GetUserAuthTokenByEmailHandler
+final class GetUserAuthTokenByEmailHandler
 {
     private JWT $jwt;
     private Config $config;

@@ -4,7 +4,7 @@ namespace src\Posts\Domain\Events;
 
 use src\Posts\Domain\ValueObjects\PostId;
 
-class PostPublished
+final class PostPublished
 {
     public PostId $postId;
 

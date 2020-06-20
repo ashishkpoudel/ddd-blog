@@ -4,7 +4,7 @@ namespace src\Core\Bus\Query;
 
 use Illuminate\Bus\Dispatcher;
 
-class QueryBus
+final class QueryBus
 {
     private Dispatcher $dispatcher;
 

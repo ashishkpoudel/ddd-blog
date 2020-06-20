@@ -4,7 +4,7 @@ namespace src\Core\Http\Response;
 
 use Illuminate\Http\JsonResponse;
 
-class UnauthorizedResponse extends JsonResponse
+final class UnauthorizedResponse extends JsonResponse
 {
     public function __construct(string $message, array $headers = [])
     {

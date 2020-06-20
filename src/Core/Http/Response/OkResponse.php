@@ -4,7 +4,7 @@ namespace src\Core\Http\Response;
 
 use Illuminate\Http\JsonResponse;
 
-class OkResponse extends JsonResponse
+final class OkResponse extends JsonResponse
 {
     public function __construct($content = '', array $headers = [])
     {

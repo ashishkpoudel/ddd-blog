@@ -4,7 +4,7 @@ namespace src\Users\Domain\Models;
 
 use src\Users\Domain\ValueObjects\UserId;
 
-class User implements UserInterface
+final class User implements UserInterface
 {
     private UserId $id;
     private string $name;

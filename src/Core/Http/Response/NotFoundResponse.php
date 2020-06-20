@@ -4,7 +4,7 @@ namespace src\Core\Http\Response;
 
 use Illuminate\Http\JsonResponse;
 
-class NotFoundResponse extends JsonResponse
+final class NotFoundResponse extends JsonResponse
 {
     public function __construct(string $message, array $headers = [])
     {

@@ -4,7 +4,7 @@ namespace src\Core\Support;
 
 use Illuminate\Http\Request;
 
-class QueryOptions
+final class QueryOptions
 {
     public int $page;
     public int $limit;

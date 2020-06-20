@@ -4,7 +4,7 @@ namespace src\Posts\Infrastructure\Http\Requests;
 
 use src\Core\Http\Requests\BaseFormRequest;
 
-class PostRequest extends BaseFormRequest
+final class PostRequest extends BaseFormRequest
 {
     public function rules()
     {

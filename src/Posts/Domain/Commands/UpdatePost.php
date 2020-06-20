@@ -6,7 +6,7 @@ use src\Core\Bus\Command\CommandInterface;
 use src\Posts\Domain\Models\Tag;
 use src\Posts\Domain\ValueObjects\PostId;
 
-class UpdatePost implements CommandInterface
+final class UpdatePost implements CommandInterface
 {
     public PostId $postId;
     public ?string $title;

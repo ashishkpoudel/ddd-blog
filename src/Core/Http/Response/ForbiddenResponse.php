@@ -4,7 +4,7 @@ namespace src\Core\Http\Response;
 
 use Illuminate\Http\JsonResponse;
 
-class ForbiddenResponse extends JsonResponse
+final class ForbiddenResponse extends JsonResponse
 {
     public function __construct(string $message, array $headers = [])
     {

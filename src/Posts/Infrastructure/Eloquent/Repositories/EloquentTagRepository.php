@@ -8,7 +8,7 @@ use src\Posts\Domain\Repositories\TagRepositoryInterface;
 use src\Posts\Infrastructure\Eloquent\Mappers\TagMapper;
 use src\Posts\Infrastructure\Eloquent\Models\TagModel;
 
-class EloquentTagRepository implements TagRepositoryInterface
+final class EloquentTagRepository implements TagRepositoryInterface
 {
     private TagModel $tagModel;
 

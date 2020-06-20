@@ -6,7 +6,7 @@ use src\Users\Domain\Models\User;
 use src\Users\Domain\Models\UserInterface;
 use src\Users\Domain\ValueObjects\UserId;
 
-class UserMapper
+final class UserMapper
 {
     public static function toDomain(array $data = []): UserInterface
     {

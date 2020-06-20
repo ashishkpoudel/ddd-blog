@@ -4,7 +4,7 @@ namespace src\Core\Bus\Command;
 
 use Illuminate\Bus\Dispatcher;
 
-class CommandBus
+final class CommandBus
 {
     private Dispatcher $dispatcher;
 

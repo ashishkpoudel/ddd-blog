@@ -7,7 +7,7 @@ use src\Posts\Domain\Models\PostInterface;
 use src\Posts\Domain\ValueObjects\PostId;
 use src\Users\Domain\ValueObjects\UserId;
 
-class PostMapper
+final class PostMapper
 {
     public static function toDomain(array $data = []): PostInterface
     {

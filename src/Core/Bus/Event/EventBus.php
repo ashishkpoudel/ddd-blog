@@ -4,7 +4,7 @@ namespace src\Core\Bus\Event;
 
 use Illuminate\Events\Dispatcher;
 
-class EventBus
+final class EventBus
 {
     private Dispatcher $dispatcher;
 

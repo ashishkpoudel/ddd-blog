@@ -4,7 +4,7 @@ namespace src\Core\Http\Response;
 
 use Illuminate\Http\JsonResponse;
 
-class EmptyResponse extends JsonResponse
+final class EmptyResponse extends JsonResponse
 {
     public function __construct(int $status = 200, array $headers = [])
     {

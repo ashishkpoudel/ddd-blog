@@ -1,13 +1,13 @@
 <?php
 
-namespace src\Posts\Application\Commands;
+namespace src\Posts\Application\CommandHandlers;
 
 use Illuminate\Log\Logger;
 use src\Posts\Domain\Commands\DeletePost;
 use src\Posts\Domain\Exceptions\CannotDeletePostException;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
-class DeletePostHandler
+final class DeletePostHandler
 {
     private Logger $logger;
     private PostRepositoryInterface $postRepository;

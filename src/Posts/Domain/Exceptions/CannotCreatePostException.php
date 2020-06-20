@@ -2,7 +2,7 @@
 
 namespace src\Posts\Domain\Exceptions;
 
-class CannotCreatePostException extends PostException
+final class CannotCreatePostException extends PostException
 {
 
 }

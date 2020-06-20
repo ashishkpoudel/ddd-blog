@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Posts\Application\Commands;
+namespace src\Posts\Application\CommandHandlers;
 
 use src\Posts\Domain\Commands\PublishPost;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
-class PublishPostHandler
+final class PublishPostHandler
 {
     private PostRepositoryInterface $postRepository;
 

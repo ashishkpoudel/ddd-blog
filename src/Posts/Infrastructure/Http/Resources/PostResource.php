@@ -5,7 +5,7 @@ namespace src\Posts\Infrastructure\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
 use src\Posts\Domain\Models\PostInterface;
 
-class PostResource extends JsonResource
+final class PostResource extends JsonResource
 {
     /**
      * Transform the resource into an array.

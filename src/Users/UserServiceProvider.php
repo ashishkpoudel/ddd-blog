@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
-use src\Users\Application\Queries\GetUserAuthTokenByEmailHandler;
+use src\Users\Application\QueryHandlers\GetUserAuthTokenByEmailHandler;
 use src\Users\Domain\Repositories\UserRepositoryInterface;
 use src\Users\Infrastructure\Eloquent\Repositories\EloquentUserRepository;
 
-class UserServiceProvider extends ServiceProvider
+final class UserServiceProvider extends ServiceProvider
 {
     private array $queries = [
         GetUserAuthTokenByEmail::class => GetUserAuthTokenByEmailHandler::class

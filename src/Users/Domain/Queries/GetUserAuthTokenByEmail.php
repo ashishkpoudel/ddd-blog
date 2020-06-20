@@ -4,7 +4,7 @@ namespace src\Users\Domain\Queries;
 
 use src\Core\Bus\Query\QueryInterface;
 
-class GetUserAuthTokenByEmail implements QueryInterface
+final class GetUserAuthTokenByEmail implements QueryInterface
 {
     public string $emailAddress;
 

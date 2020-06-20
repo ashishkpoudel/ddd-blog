@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Posts\Application\Commands;
+namespace src\Posts\Application\CommandHandlers;
 
 use Illuminate\Support\Str;
 use Illuminate\Log\Logger;
@@ -9,7 +9,7 @@ use src\Posts\Domain\Exceptions\CannotCreatePostException;
 use src\Posts\Domain\Models\Post;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
-class CreatePostHandler
+final class CreatePostHandler
 {
     private Logger $logger;
     private PostRepositoryInterface $postRepository;
@@ -35,7 +35,6 @@ class CreatePostHandler
             $this->postRepository->save($post);
 
         } catch (\Exception $exception) {
-            throw $exception;
             $this->logger->error($exception->getMessage(), $exception->getTrace());
             throw new CannotCreatePostException(
                 'Failed to create post'

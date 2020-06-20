@@ -9,7 +9,7 @@ use src\Users\Infrastructure\Requests\LoginRequest;
 use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
 use src\Users\Application\Services\AuthService;
 
-class UserLoginController extends BaseController
+final class UserLoginController extends BaseController
 {
     private AuthService $authService;
 

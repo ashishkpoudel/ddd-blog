@@ -5,7 +5,7 @@ namespace src\Posts\Infrastructure\Eloquent\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class PostModel extends Model
+final class PostModel extends Model
 {
     const TABLE = 'posts';
 

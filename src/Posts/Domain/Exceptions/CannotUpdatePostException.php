@@ -2,7 +2,7 @@
 
 namespace src\Posts\Domain\Exceptions;
 
-class CannotUpdatePostException extends PostException
+final class CannotUpdatePostException extends PostException
 {
 
 }

@@ -4,7 +4,7 @@ namespace src\Users\Infrastructure\Requests;
 
 use src\Core\Http\Requests\BaseFormRequest;
 
-class LoginRequest extends BaseFormRequest
+final class LoginRequest extends BaseFormRequest
 {
     public function rules(): array
     {

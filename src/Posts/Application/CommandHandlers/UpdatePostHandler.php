@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Posts\Application\Commands;
+namespace src\Posts\Application\CommandHandlers;
 
 use Illuminate\Log\Logger;
 use Illuminate\Support\Str;
@@ -8,7 +8,7 @@ use src\Posts\Domain\Commands\UpdatePost;
 use src\Posts\Domain\Exceptions\CannotUpdatePostException;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
-class UpdatePostHandler
+final class UpdatePostHandler
 {
     public Logger $logger;
     private PostRepositoryInterface $postRepository;

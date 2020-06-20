@@ -1,12 +1,12 @@
 <?php
 
-namespace src\Posts\Application\Queries;
+namespace src\Posts\Application\QueryHandlers;
 
 use src\Posts\Domain\Queries\GetPaginatedPost;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 use src\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
 
-class GetPaginatedPostHandler
+final class GetPaginatedPostHandler
 {
     private PostRepositoryInterface $postRepository;
 

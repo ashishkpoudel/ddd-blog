@@ -4,7 +4,7 @@ namespace src\Users\Domain\Models;
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class UserJwtSubject implements JWTSubject
+final class UserJwtSubject implements JWTSubject
 {
     private string $identifier;
     private array $customClaims;

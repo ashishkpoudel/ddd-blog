@@ -5,7 +5,7 @@ namespace src\Posts\Domain\Queries;
 use src\Core\Bus\Query\QueryInterface;
 use src\Posts\Domain\ValueObjects\PostId;
 
-class GetPost implements QueryInterface
+final class GetPost implements QueryInterface
 {
     public PostId $postId;
 

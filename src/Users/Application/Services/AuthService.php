@@ -5,7 +5,7 @@ namespace src\Users\Application\Services;
 use Illuminate\Hashing\HashManager;
 use src\Users\Domain\Repositories\UserRepositoryInterface;
 
-class AuthService
+final class AuthService
 {
     private HashManager $hash;
     private UserRepositoryInterface $userRepository;

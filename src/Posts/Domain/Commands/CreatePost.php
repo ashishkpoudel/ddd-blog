@@ -7,7 +7,7 @@ use src\Posts\Domain\ValueObjects\PostId;
 use src\Users\Domain\ValueObjects\UserId;
 use src\Core\Bus\Command\CommandInterface;
 
-class CreatePost implements CommandInterface
+final class CreatePost implements CommandInterface
 {
     public PostId $postId;
     public UserId $userId;

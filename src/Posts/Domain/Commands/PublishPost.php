@@ -5,7 +5,7 @@ namespace src\Posts\Domain\Commands;
 use src\Core\Bus\Command\CommandInterface;
 use src\Posts\Domain\ValueObjects\PostId;
 
-class PublishPost implements CommandInterface
+final class PublishPost implements CommandInterface
 {
     public PostId $postId;
 

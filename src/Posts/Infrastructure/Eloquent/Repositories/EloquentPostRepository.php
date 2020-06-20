@@ -11,7 +11,7 @@ use src\Posts\Domain\ValueObjects\PostId;
 use src\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
 use src\Posts\Infrastructure\Eloquent\Models\PostModel;
 
-class EloquentPostRepository implements PostRepositoryInterface
+final class EloquentPostRepository implements PostRepositoryInterface
 {
     private PostModel $model;
     private TagRepositoryInterface $tagRepository;

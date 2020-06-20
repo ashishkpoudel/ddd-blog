@@ -1,12 +1,12 @@
 <?php
 
-namespace src\Posts\Application\Queries;
+namespace src\Posts\Application\QueryHandlers;
 
 use src\Posts\Domain\Models\PostInterface;
 use src\Posts\Domain\Queries\GetPost;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
-class GetPostHandler
+final class GetPostHandler
 {
     private PostRepositoryInterface $postRepository;
 

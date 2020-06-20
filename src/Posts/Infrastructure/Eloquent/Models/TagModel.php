@@ -4,7 +4,7 @@ namespace src\Posts\Infrastructure\Eloquent\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TagModel extends Model
+final class TagModel extends Model
 {
     const TABLE = 'tags';
 
