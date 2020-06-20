@@ -38,7 +38,7 @@ class PostServiceProvider extends ServiceProvider
         Bus::map($this->commands);
         Bus::map($this->queries);
 
-        Route::prefix('api')->middleware('api')->group(base_path('src/Posts/Infrastructure/Http/routes.php'));
+        Route::prefix('api')->group(base_path('src/Posts/Infrastructure/Http/routes.php'));
     }
 
     public function register()

@@ -17,12 +17,14 @@ class PostMapper
             'slug' => $data['slug'],
             'body' => $data['body'],
             'userId' => UserId::fromString($data['userId']),
+            'publishedAt' => new \DateTime($data['publishedAt']),
         ]);
     }
 
-    public static function toPersistence(Post $post): array
+    public static function toPersistence(PostInterface $post): array
     {
         return [
+            'id' => $post->getId()->getValue(),
             'title' => $post->getTitle(),
             'slug' => $post->getSlug(),
             'body' => $post->getBody(),

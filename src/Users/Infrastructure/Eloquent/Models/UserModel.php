@@ -15,6 +15,8 @@ class UserModel extends Authenticatable implements JWTSubject
         'id' => 'string'
     ];
 
+    protected $guarded = [];
+
     public function getJWTIdentifier()
     {
         return $this->getKey();

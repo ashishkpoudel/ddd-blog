@@ -45,7 +45,7 @@ class EloquentPostRepository implements PostRepositoryInterface
         );
     }
 
-    public function save(Post $post): void
+    public function save(PostInterface $post): void
     {
         $model = $this->query()->find($post->getId()->getValue());
 

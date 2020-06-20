@@ -18,7 +18,9 @@ final class CreatePostController extends BaseController
     {
         $postId = PostId::new();
         $userId = UserId::fromString($request->user()->id);
-        $tagIds = array_map(fn($tagId) => TagId::fromString($tagId), $request->input('tagIds'));
+        $tagIds = $request->has('tagIds')
+            ? array_map(fn($tagId) => TagId::fromString($tagId), $request->input('tagIds'))
+            : [];
 
         $this->commandBus()->execute(
             app(CreatePost::class, [

@@ -15,6 +15,8 @@ class PostModel extends Model
         'id' => 'string'
     ];
 
+    protected $guarded = [];
+
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(

@@ -2,7 +2,7 @@
 
 namespace src\Posts\Application\Queries;
 
-use src\Posts\Domain\Models\Post;
+use src\Posts\Domain\Models\PostInterface;
 use src\Posts\Domain\Queries\GetPost;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
 
@@ -15,7 +15,7 @@ class GetPostHandler
         $this->postRepository = $postRepository;
     }
 
-    public function handle(GetPost $query): Post
+    public function handle(GetPost $query): PostInterface
     {
         return $this->postRepository->findByIdOrFail($query->postId);
     }

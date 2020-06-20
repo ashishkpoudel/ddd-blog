@@ -2,33 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef8afdcc-4a38-4fe2-a494-4247d90d54c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ddd-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ddd-blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Support/QueryOptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Support/QueryOptions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/Commands/CreatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/Commands/CreatePostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/Queries/GetPaginatedPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/Queries/GetPaginatedPostHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/Queries/GetPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/Queries/GetPostHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/CreatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/CreatePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Entities/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Entities/PostInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/PostInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Entities/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Entities/TagInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/TagInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepositoryInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/TagMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/TagMapper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/PostModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/PostModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/TagModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/TagModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Application/Queries/GetUserAuthTokenByEmailHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/Queries/GetUserAuthTokenByEmailHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Entities/UserInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Models/UserInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Repositories/UserRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Repositories/UserRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Mappers/UserMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Mappers/UserMapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/CreatePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/CreatePostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Requests/PostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Requests/PostRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/PostServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/PostServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +40,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/JWT.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Container/Container.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -202,15 +198,22 @@
       <workItem from="1592090179211" duration="5530000" />
       <workItem from="1592110259492" duration="22568000" />
       <workItem from="1592235551387" duration="5649000" />
-      <workItem from="1592348878413" duration="2732000" />
+      <workItem from="1592348878413" duration="3607000" />
+      <workItem from="1592411449507" duration="3849000" />
+      <workItem from="1592479619523" duration="4078000" />
+      <workItem from="1592648185971" duration="4384000" />
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="755" y="201" width="399" height="666" key="#com.intellij.ide.util.MemberChooser" timestamp="1592354596445">
+    <state x="704" y="319" width="551" height="417" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592482020880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="755" y="201" width="399" height="666" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592354596445" />
+    <state x="704" y="319" width="551" height="417" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592482020880" />
+    <state x="755" y="201" width="399" height="673" key="#com.intellij.ide.util.MemberChooser" timestamp="1592483677977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="755" y="201" width="399" height="673" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592483677977" />
     <state x="666" y="317" width="381" height="460" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592354579087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

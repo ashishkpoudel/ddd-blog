@@ -2,9 +2,9 @@
 
 namespace src\Posts\Application\Queries;
 
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use src\Posts\Domain\Queries\GetPaginatedPost;
 use src\Posts\Domain\Repositories\PostRepositoryInterface;
+use src\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
 
 class GetPaginatedPostHandler
 {
@@ -15,9 +15,11 @@ class GetPaginatedPostHandler
         $this->postRepository = $postRepository;
     }
 
-    public function handle(GetPaginatedPost $query): LengthAwarePaginator
+    public function handle(GetPaginatedPost $query)
     {
-        $postQuery = $this->postRepository->query();
+        $postQuery = $this->postRepository
+            ->query()
+            ->limit($query->query->limit);
 
         if (isset($query->query->filters['title'])) {
             $postQuery->where('title', 'like', '%' . $query->query->filters['title'] . '%');
@@ -27,6 +29,9 @@ class GetPaginatedPostHandler
             $postQuery->where('slug', 'like', '%' . $query->query->filters['slug'] . '%');
         }
 
-        return $postQuery->limit($query->query->limit)->paginate($query->query->page);
+        return $postQuery->get()
+            ->map(function($post) {
+                return PostMapper::toDomain($post->toArray());
+            });
     }
 }

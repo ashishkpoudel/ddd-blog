@@ -38,7 +38,7 @@ class EloquentTagRepository implements TagRepositoryInterface
         );
     }
 
-    public function saveMany(Tag ...$tags): void
+    public function saveMany(array $tags = []): void
     {
         foreach ($tags as $tag) {
             $this->save($tag);

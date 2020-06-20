@@ -29,12 +29,13 @@ class CreatePostHandler
                 'title' => $command->title,
                 'slug' => Str::slug($command->title),
                 'body' => $command->body,
-                'tagIds' => $command->tagIds,
+                'publishedAt' => new \DateTime(),
             ]);
 
             $this->postRepository->save($post);
 
         } catch (\Exception $exception) {
+            throw $exception;
             $this->logger->error($exception->getMessage(), $exception->getTrace());
             throw new CannotCreatePostException(
                 'Failed to create post'

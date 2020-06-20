@@ -13,7 +13,7 @@ class CreatePost implements CommandInterface
     public UserId $userId;
     public string $title;
     public string $body;
-    public array $tagIds;
+    public array $tagIds = [];
 
     public function __construct(PostId $postId, UserId $userId, string $title, string $body, Tag ...$tags)
     {

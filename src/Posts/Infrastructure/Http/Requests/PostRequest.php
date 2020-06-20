@@ -11,7 +11,7 @@ class PostRequest extends BaseFormRequest
         return [
             'title' => ['required', 'string'],
             'body' => ['required', 'string'],
-            'tagIds' => ['array']
+            'tagIds' => ['array'],
         ];
     }
 }

@@ -13,4 +13,6 @@ class TagModel extends Model
     protected $casts = [
         'id' => 'string',
     ];
+
+    protected $guarded = [];
 }

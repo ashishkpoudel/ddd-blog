@@ -24,8 +24,7 @@ class Post implements PostInterface
         string $slug,
         string $body,
         UserId $userId,
-        ?\DateTime $publishedAt,
-        Tag ...$tags
+        ?\DateTime $publishedAt
     ) {
         $this->setId($id);
         $this->setTitle($title);
@@ -33,7 +32,6 @@ class Post implements PostInterface
         $this->setBody($body);
         $this->setUserId($userId);
         $this->setPublishedAt($publishedAt);
-        $this->setTags($tags);
     }
 
     public function markAsPublished(): void
@@ -145,10 +143,5 @@ class Post implements PostInterface
     public function getTags(): array
     {
         return $this->tags;
-    }
-
-    private function setTags(Tag ...$tags): void
-    {
-        $this->tags = $tags;
     }
 }

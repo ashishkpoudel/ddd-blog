@@ -11,5 +11,5 @@ interface TagRepositoryInterface
 
     public function save(Tag $tag): void;
 
-    public function saveMany(Tag ...$tags): void;
+    public function saveMany(array $tags): void;
 }

@@ -10,7 +10,7 @@ class QueryOptions
     public int $limit;
     public array $filters;
 
-    public function __construct(int $page, int $limit, array $filters = [])
+    private function __construct(int $page, int $limit, array $filters = [])
     {
         $this->page = $page;
         $this->limit = $limit;
@@ -20,9 +20,9 @@ class QueryOptions
     public static function fromRequest(Request $request)
     {
         return new self(
-            (int) $request->input('page'),
-            (int) $request->input('limit'),
-            (array) $request->input('filter')
+            $request->has('page') ? (int) $request->input('page') : 1,
+            $request->has('limit') ? (int) $request->input('limit') : 15,
+            $request->has('filter') ? (array) $request->input('filter') : []
         );
     }
 }

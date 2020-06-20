@@ -3,6 +3,7 @@
 namespace src\Posts\Infrastructure\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use src\Posts\Domain\Models\PostInterface;
 
 class PostResource extends JsonResource
 {
@@ -14,12 +15,16 @@ class PostResource extends JsonResource
      */
     public function toArray($request)
     {
+        /** @var PostInterface $data */
+        $data = $this;
+
         return [
-            'id' => $this->id,
-            'userId' => $this->userId,
-            'title' => $this->title,
-            'slug' => $this->slug,
-            'body' => $this->body
+            'id' => $data->getId()->getValue(),
+            'userId' => $data->getUserId()->getValue(),
+            'title' => $data->getTitle(),
+            'slug' => $data->getSlug(),
+            'body' => $data->getBody(),
+            'publishedAt' => $data->getPublishedAt() ? $data->getPublishedAt()->format('Y-m-d') : null,
         ];
     }
 }
