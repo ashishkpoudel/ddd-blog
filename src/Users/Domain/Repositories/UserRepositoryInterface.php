@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Users\Domain\Repositories;
+namespace Weblog\Users\Domain\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Users\Domain\Models\User;
-use src\Users\Domain\Models\UserInterface;
-use src\Users\Domain\ValueObjects\UserId;
+use Weblog\Users\Domain\Models\User;
+use Weblog\Users\Domain\Models\UserInterface;
+use Weblog\Users\Domain\ValueObjects\UserId;
 
 interface UserRepositoryInterface
 {

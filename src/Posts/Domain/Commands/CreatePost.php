@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Posts\Domain\Commands;
+namespace Weblog\Posts\Domain\Commands;
 
-use src\Posts\Domain\Models\Tag;
-use src\Posts\Domain\ValueObjects\PostId;
-use src\Users\Domain\ValueObjects\UserId;
-use src\Core\Bus\Command\CommandInterface;
+use Weblog\Posts\Domain\Models\Tag;
+use Weblog\Posts\Domain\ValueObjects\PostId;
+use Weblog\Users\Domain\ValueObjects\UserId;
+use Weblog\Core\Bus\Command\CommandInterface;
 
 final class CreatePost implements CommandInterface
 {

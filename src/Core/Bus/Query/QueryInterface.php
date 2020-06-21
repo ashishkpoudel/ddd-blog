@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Core\Bus\Query;
+namespace Weblog\Core\Bus\Query;
 
 interface QueryInterface
 {

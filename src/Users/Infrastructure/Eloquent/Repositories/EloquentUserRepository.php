@@ -1,14 +1,14 @@
 <?php
 
-namespace src\Users\Infrastructure\Eloquent\Repositories;
+namespace Weblog\Users\Infrastructure\Eloquent\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Users\Domain\Models\User;
-use src\Users\Domain\Models\UserInterface;
-use src\Users\Domain\Repositories\UserRepositoryInterface;
-use src\Users\Domain\ValueObjects\UserId;
-use src\Users\Infrastructure\Eloquent\Mappers\UserMapper;
-use src\Users\Infrastructure\Eloquent\Models\UserModel;
+use Weblog\Users\Domain\Models\User;
+use Weblog\Users\Domain\Models\UserInterface;
+use Weblog\Users\Domain\Repositories\UserRepositoryInterface;
+use Weblog\Users\Domain\ValueObjects\UserId;
+use Weblog\Users\Infrastructure\Eloquent\Mappers\UserMapper;
+use Weblog\Users\Infrastructure\Eloquent\Models\UserModel;
 
 final class EloquentUserRepository implements UserRepositoryInterface
 {

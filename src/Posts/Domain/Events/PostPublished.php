@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Posts\Domain\Events;
+namespace Weblog\Posts\Domain\Events;
 
-use src\Posts\Domain\ValueObjects\PostId;
+use Weblog\Posts\Domain\ValueObjects\PostId;
 
 final class PostPublished
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Core\Bus\Command;
+namespace Weblog\Core\Bus\Command;
 
 use Illuminate\Bus\Dispatcher;
 

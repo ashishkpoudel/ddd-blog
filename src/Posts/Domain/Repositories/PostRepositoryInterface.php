@@ -1,10 +1,10 @@
 <?php
 
-namespace src\Posts\Domain\Repositories;
+namespace Weblog\Posts\Domain\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Posts\Domain\Models\PostInterface;
-use src\Posts\Domain\ValueObjects\PostId;
+use Weblog\Posts\Domain\Models\PostInterface;
+use Weblog\Posts\Domain\ValueObjects\PostId;
 
 interface PostRepositoryInterface
 {

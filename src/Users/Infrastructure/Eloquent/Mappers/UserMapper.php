@@ -1,10 +1,10 @@
 <?php
 
-namespace src\Users\Infrastructure\Eloquent\Mappers;
+namespace Weblog\Users\Infrastructure\Eloquent\Mappers;
 
-use src\Users\Domain\Models\User;
-use src\Users\Domain\Models\UserInterface;
-use src\Users\Domain\ValueObjects\UserId;
+use Weblog\Users\Domain\Models\User;
+use Weblog\Users\Domain\Models\UserInterface;
+use Weblog\Users\Domain\ValueObjects\UserId;
 
 final class UserMapper
 {

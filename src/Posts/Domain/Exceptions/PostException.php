@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Posts\Domain\Exceptions;
+namespace Weblog\Posts\Domain\Exceptions;
 
-use src\Core\Exceptions\DomainException;
+use Weblog\Core\Exceptions\DomainException;
 
 final class PostException extends DomainException
 {

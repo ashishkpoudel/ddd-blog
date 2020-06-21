@@ -1,12 +1,12 @@
 <?php
 
-namespace src\Core\Http\Controllers;
+namespace Weblog\Core\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Routing\Controller;
-use src\Core\Bus\Command\CommandBus;
-use src\Core\Bus\Event\EventBus;
-use src\Core\Bus\Query\QueryBus;
+use Weblog\Core\Bus\Command\CommandBus;
+use Weblog\Core\Bus\Event\EventBus;
+use Weblog\Core\Bus\Query\QueryBus;
 
 abstract class BaseController extends Controller
 {

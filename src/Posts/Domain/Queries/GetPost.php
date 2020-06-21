@@ -1,9 +1,9 @@
 <?php
 
-namespace src\Posts\Domain\Queries;
+namespace Weblog\Posts\Domain\Queries;
 
-use src\Core\Bus\Query\QueryInterface;
-use src\Posts\Domain\ValueObjects\PostId;
+use Weblog\Core\Bus\Query\QueryInterface;
+use Weblog\Posts\Domain\ValueObjects\PostId;
 
 final class GetPost implements QueryInterface
 {

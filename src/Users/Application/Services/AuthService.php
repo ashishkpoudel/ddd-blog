@@ -1,9 +1,9 @@
 <?php
 
-namespace src\Users\Application\Services;
+namespace Weblog\Users\Application\Services;
 
 use Illuminate\Hashing\HashManager;
-use src\Users\Domain\Repositories\UserRepositoryInterface;
+use Weblog\Users\Domain\Repositories\UserRepositoryInterface;
 
 final class AuthService
 {

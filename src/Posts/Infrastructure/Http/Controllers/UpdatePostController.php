@@ -1,15 +1,15 @@
 <?php
 
-namespace src\Posts\Infrastructure\Http\Controllers;
+namespace Weblog\Posts\Infrastructure\Http\Controllers;
 
-use src\Core\Http\Controllers\BaseController;
-use src\Core\Http\Response\UpdatedResponse;
-use src\Posts\Domain\Commands\UpdatePost;
-use src\Posts\Domain\ValueObjects\TagId;
-use src\Posts\Infrastructure\Http\Requests\PostRequest;
-use src\Posts\Infrastructure\Http\Resources\PostResource;
-use src\Posts\Domain\Queries\GetPost;
-use src\Posts\Domain\ValueObjects\PostId;
+use Weblog\Core\Http\Controllers\BaseController;
+use Weblog\Core\Http\Response\UpdatedResponse;
+use Weblog\Posts\Domain\Commands\UpdatePost;
+use Weblog\Posts\Domain\ValueObjects\TagId;
+use Weblog\Posts\Infrastructure\Http\Requests\PostRequest;
+use Weblog\Posts\Infrastructure\Http\Resources\PostResource;
+use Weblog\Posts\Domain\Queries\GetPost;
+use Weblog\Posts\Domain\ValueObjects\PostId;
 
 final class UpdatePostController extends BaseController
 {

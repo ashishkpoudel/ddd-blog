@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Posts\Infrastructure\Http\Controllers;
+namespace Weblog\Posts\Infrastructure\Http\Controllers;
 
-use src\Core\Http\Controllers\BaseController;
-use src\Core\Http\Response\DeletedResponse;
-use src\Posts\Domain\Commands\DeletePost;
-use src\Posts\Domain\ValueObjects\PostId;
+use Weblog\Core\Http\Controllers\BaseController;
+use Weblog\Core\Http\Response\DeletedResponse;
+use Weblog\Posts\Domain\Commands\DeletePost;
+use Weblog\Posts\Domain\ValueObjects\PostId;
 
 final class DeletePostController extends BaseController
 {

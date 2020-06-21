@@ -1,10 +1,10 @@
 <?php
 
-namespace src\Posts\Domain\Models;
+namespace Weblog\Posts\Domain\Models;
 
-use src\Posts\Domain\ValueObjects\PostId;
-use src\Posts\Domain\ValueObjects\TagId;
-use src\Users\Domain\ValueObjects\UserId;
+use Weblog\Posts\Domain\ValueObjects\PostId;
+use Weblog\Posts\Domain\ValueObjects\TagId;
+use Weblog\Users\Domain\ValueObjects\UserId;
 
 final class Post implements PostInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace src\Posts\Domain\Queries;
+namespace Weblog\Posts\Domain\Queries;
 
-use src\Core\Bus\Query\QueryInterface;
-use src\Core\Support\QueryOptions;
+use Weblog\Core\Bus\Query\QueryInterface;
+use Weblog\Core\Support\QueryOptions;
 
 final class GetPaginatedPost implements QueryInterface
 {

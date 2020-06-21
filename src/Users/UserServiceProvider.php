@@ -1,14 +1,14 @@
 <?php
 
-namespace src\Users;
+namespace Weblog\Users;
 
 use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
-use src\Users\Application\QueryHandlers\GetUserAuthTokenByEmailHandler;
-use src\Users\Domain\Repositories\UserRepositoryInterface;
-use src\Users\Infrastructure\Eloquent\Repositories\EloquentUserRepository;
+use Weblog\Users\Domain\Queries\GetUserAuthTokenByEmail;
+use Weblog\Users\Application\QueryHandlers\GetUserAuthTokenByEmailHandler;
+use Weblog\Users\Domain\Repositories\UserRepositoryInterface;
+use Weblog\Users\Infrastructure\Eloquent\Repositories\EloquentUserRepository;
 
 final class UserServiceProvider extends ServiceProvider
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Users\Domain\Queries;
+namespace Weblog\Users\Domain\Queries;
 
-use src\Core\Bus\Query\QueryInterface;
+use Weblog\Core\Bus\Query\QueryInterface;
 
 final class GetUserAuthTokenByEmail implements QueryInterface
 {

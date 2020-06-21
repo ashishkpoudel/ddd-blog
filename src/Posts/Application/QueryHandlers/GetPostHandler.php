@@ -1,10 +1,10 @@
 <?php
 
-namespace src\Posts\Application\QueryHandlers;
+namespace Weblog\Posts\Application\QueryHandlers;
 
-use src\Posts\Domain\Models\PostInterface;
-use src\Posts\Domain\Queries\GetPost;
-use src\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Models\PostInterface;
+use Weblog\Posts\Domain\Queries\GetPost;
+use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
 
 final class GetPostHandler
 {

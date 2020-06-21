@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Core\Support;
+namespace Weblog\Core\Support;
 
 final class PaginatedResult
 {

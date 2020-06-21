@@ -1,15 +1,14 @@
 <?php
 
-namespace src\Posts\Infrastructure\Eloquent\Repositories;
+namespace Weblog\Posts\Infrastructure\Eloquent\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Posts\Domain\Models\Post;
-use src\Posts\Domain\Models\PostInterface;
-use src\Posts\Domain\Repositories\PostRepositoryInterface;
-use src\Posts\Domain\Repositories\TagRepositoryInterface;
-use src\Posts\Domain\ValueObjects\PostId;
-use src\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
-use src\Posts\Infrastructure\Eloquent\Models\PostModel;
+use Weblog\Posts\Domain\Models\PostInterface;
+use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Repositories\TagRepositoryInterface;
+use Weblog\Posts\Domain\ValueObjects\PostId;
+use Weblog\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
+use Weblog\Posts\Infrastructure\Eloquent\Models\PostModel;
 
 final class EloquentPostRepository implements PostRepositoryInterface
 {

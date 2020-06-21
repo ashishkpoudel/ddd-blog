@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Core\Bus\Event;
+namespace Weblog\Core\Bus\Event;
 
 use Illuminate\Events\Dispatcher;
 

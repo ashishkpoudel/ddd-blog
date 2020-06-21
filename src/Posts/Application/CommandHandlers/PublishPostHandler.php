@@ -1,9 +1,9 @@
 <?php
 
-namespace src\Posts\Application\CommandHandlers;
+namespace Weblog\Posts\Application\CommandHandlers;
 
-use src\Posts\Domain\Commands\PublishPost;
-use src\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Commands\PublishPost;
+use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
 
 final class PublishPostHandler
 {

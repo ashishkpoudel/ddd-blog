@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Users\Domain\ValueObjects;
+namespace Weblog\Users\Domain\ValueObjects;
 
-use src\Core\ValueObjects\Identity;
+use Weblog\Core\ValueObjects\Identity;
 
 final class UserId extends Identity
 {

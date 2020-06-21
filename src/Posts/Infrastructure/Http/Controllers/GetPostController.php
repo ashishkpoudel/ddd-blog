@@ -1,12 +1,12 @@
 <?php
 
-namespace src\Posts\Infrastructure\Http\Controllers;
+namespace Weblog\Posts\Infrastructure\Http\Controllers;
 
-use src\Core\Http\Controllers\BaseController;
-use src\Core\Http\Response\OkResponse;
-use src\Posts\Domain\Queries\GetPost;
-use src\Posts\Domain\ValueObjects\PostId;
-use src\Posts\Infrastructure\Http\Resources\PostResource;
+use Weblog\Core\Http\Controllers\BaseController;
+use Weblog\Core\Http\Response\OkResponse;
+use Weblog\Posts\Domain\Queries\GetPost;
+use Weblog\Posts\Domain\ValueObjects\PostId;
+use Weblog\Posts\Infrastructure\Http\Resources\PostResource;
 
 final class GetPostController extends BaseController
 {

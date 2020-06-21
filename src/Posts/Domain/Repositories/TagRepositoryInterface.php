@@ -1,9 +1,9 @@
 <?php
 
-namespace src\Posts\Domain\Repositories;
+namespace Weblog\Posts\Domain\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Posts\Domain\Models\Tag;
+use Weblog\Posts\Domain\Models\Tag;
 
 interface TagRepositoryInterface
 {

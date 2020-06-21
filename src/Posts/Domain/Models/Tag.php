@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Posts\Domain\Models;
+namespace Weblog\Posts\Domain\Models;
 
-use src\Posts\Domain\ValueObjects\TagId;
+use Weblog\Posts\Domain\ValueObjects\TagId;
 
 final class Tag implements TagInterface
 {

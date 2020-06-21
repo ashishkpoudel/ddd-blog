@@ -1,12 +1,12 @@
 <?php
 
-namespace src\Posts\Infrastructure\Eloquent\Repositories;
+namespace Weblog\Posts\Infrastructure\Eloquent\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
-use src\Posts\Domain\Models\Tag;
-use src\Posts\Domain\Repositories\TagRepositoryInterface;
-use src\Posts\Infrastructure\Eloquent\Mappers\TagMapper;
-use src\Posts\Infrastructure\Eloquent\Models\TagModel;
+use Weblog\Posts\Domain\Models\Tag;
+use Weblog\Posts\Domain\Repositories\TagRepositoryInterface;
+use Weblog\Posts\Infrastructure\Eloquent\Mappers\TagMapper;
+use Weblog\Posts\Infrastructure\Eloquent\Models\TagModel;
 
 final class EloquentTagRepository implements TagRepositoryInterface
 {

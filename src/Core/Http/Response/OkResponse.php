@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Core\Http\Response;
+namespace Weblog\Core\Http\Response;
 
 use Illuminate\Http\JsonResponse;
 

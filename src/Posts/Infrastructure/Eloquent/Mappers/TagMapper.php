@@ -1,9 +1,9 @@
 <?php
 
-namespace src\Posts\Infrastructure\Eloquent\Mappers;
+namespace Weblog\Posts\Infrastructure\Eloquent\Mappers;
 
-use src\Posts\Domain\Models\Tag;
-use src\Posts\Domain\ValueObjects\TagId;
+use Weblog\Posts\Domain\Models\Tag;
+use Weblog\Posts\Domain\ValueObjects\TagId;
 
 final class TagMapper
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Users\Domain\Models;
+namespace Weblog\Users\Domain\Models;
 
-use src\Users\Domain\ValueObjects\UserId;
+use Weblog\Users\Domain\ValueObjects\UserId;
 
 final class User implements UserInterface
 {

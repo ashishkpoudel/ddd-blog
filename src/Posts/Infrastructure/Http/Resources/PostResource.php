@@ -1,9 +1,9 @@
 <?php
 
-namespace src\Posts\Infrastructure\Http\Resources;
+namespace Weblog\Posts\Infrastructure\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use src\Posts\Domain\Models\PostInterface;
+use Weblog\Posts\Domain\Models\PostInterface;
 
 final class PostResource extends JsonResource
 {

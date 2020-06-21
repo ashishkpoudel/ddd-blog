@@ -1,12 +1,12 @@
 <?php
 
-namespace src\Posts\Application\CommandHandlers;
+namespace Weblog\Posts\Application\CommandHandlers;
 
 use Illuminate\Log\Logger;
 use Illuminate\Support\Str;
-use src\Posts\Domain\Commands\UpdatePost;
-use src\Posts\Domain\Exceptions\CannotUpdatePostException;
-use src\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Commands\UpdatePost;
+use Weblog\Posts\Domain\Exceptions\CannotUpdatePostException;
+use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
 
 final class UpdatePostHandler
 {

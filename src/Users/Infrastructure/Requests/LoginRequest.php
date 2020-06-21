@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Users\Infrastructure\Requests;
+namespace Weblog\Users\Infrastructure\Requests;
 
-use src\Core\Http\Requests\BaseFormRequest;
+use Weblog\Core\Http\Requests\BaseFormRequest;
 
 final class LoginRequest extends BaseFormRequest
 {

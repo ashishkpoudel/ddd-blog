@@ -179,8 +179,8 @@ return [
         /**
          * Custom Service Providers...
          */
-        src\Posts\PostServiceProvider::class,
-        src\Users\UserServiceProvider::class,
+        Weblog\Posts\PostServiceProvider::class,
+        Weblog\Users\UserServiceProvider::class,
     ],
 
     /*

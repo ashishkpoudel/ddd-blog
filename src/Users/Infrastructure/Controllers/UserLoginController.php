@@ -1,13 +1,13 @@
 <?php
 
-namespace src\Users\Infrastructure\Controllers;
+namespace Weblog\Users\Infrastructure\Controllers;
 
-use src\Core\Http\Controllers\BaseController;
-use src\Core\Http\Response\OkResponse;
-use src\Core\Http\Response\UnauthorizedResponse;
-use src\Users\Infrastructure\Requests\LoginRequest;
-use src\Users\Domain\Queries\GetUserAuthTokenByEmail;
-use src\Users\Application\Services\AuthService;
+use Weblog\Core\Http\Controllers\BaseController;
+use Weblog\Core\Http\Response\OkResponse;
+use Weblog\Core\Http\Response\UnauthorizedResponse;
+use Weblog\Users\Infrastructure\Requests\LoginRequest;
+use Weblog\Users\Domain\Queries\GetUserAuthTokenByEmail;
+use Weblog\Users\Application\Services\AuthService;
 
 final class UserLoginController extends BaseController
 {

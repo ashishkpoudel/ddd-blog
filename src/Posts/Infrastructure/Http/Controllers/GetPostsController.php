@@ -1,14 +1,14 @@
 <?php
 
-namespace src\Posts\Infrastructure\Http\Controllers;
+namespace Weblog\Posts\Infrastructure\Http\Controllers;
 
 use Illuminate\Http\Request;
-use src\Core\Http\Controllers\BaseController;
-use src\Core\Http\Response\OkResponse;
-use src\Core\Support\PaginatedResult;
-use src\Core\Support\QueryOptions;
-use src\Posts\Infrastructure\Http\Resources\PostResource;
-use src\Posts\Domain\Queries\GetPaginatedPost;
+use Weblog\Core\Http\Controllers\BaseController;
+use Weblog\Core\Http\Response\OkResponse;
+use Weblog\Core\Support\PaginatedResult;
+use Weblog\Core\Support\QueryOptions;
+use Weblog\Posts\Infrastructure\Http\Resources\PostResource;
+use Weblog\Posts\Domain\Queries\GetPaginatedPost;
 
 final class GetPostsController extends BaseController
 {

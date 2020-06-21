@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Posts\Application\QueryHandlers;
+namespace Weblog\Posts\Application\QueryHandlers;
 
-use src\Core\Support\PaginatedResult;
-use src\Posts\Domain\Queries\GetPaginatedPost;
-use src\Posts\Domain\Repositories\PostRepositoryInterface;
-use src\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
+use Weblog\Core\Support\PaginatedResult;
+use Weblog\Posts\Domain\Queries\GetPaginatedPost;
+use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
 
 final class GetPaginatedPostHandler
 {

@@ -1,24 +1,24 @@
 <?php
 
-namespace src\Posts;
+namespace Weblog\Posts;
 
 use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use src\Posts\Domain\Commands\CreatePost;
-use src\Posts\Domain\Commands\DeletePost;
-use src\Posts\Application\CommandHandlers\CreatePostHandler;
-use src\Posts\Application\CommandHandlers\DeletePostHandler;
-use src\Posts\Application\CommandHandlers\UpdatePostHandler;
-use src\Posts\Domain\Commands\UpdatePost;
-use src\Posts\Domain\Queries\GetPaginatedPost;
-use src\Posts\Domain\Queries\GetPost;
-use src\Posts\Application\QueryHandlers\GetPaginatedPostHandler;
-use src\Posts\Application\QueryHandlers\GetPostHandler;
-use src\Posts\Domain\Repositories\PostRepositoryInterface;
-use src\Posts\Domain\Repositories\TagRepositoryInterface;
-use src\Posts\Infrastructure\Eloquent\Repositories\EloquentPostRepository;
-use src\Posts\Infrastructure\Eloquent\Repositories\EloquentTagRepository;
+use Weblog\Posts\Domain\Commands\CreatePost;
+use Weblog\Posts\Domain\Commands\DeletePost;
+use Weblog\Posts\Application\CommandHandlers\CreatePostHandler;
+use Weblog\Posts\Application\CommandHandlers\DeletePostHandler;
+use Weblog\Posts\Application\CommandHandlers\UpdatePostHandler;
+use Weblog\Posts\Domain\Commands\UpdatePost;
+use Weblog\Posts\Domain\Queries\GetPaginatedPost;
+use Weblog\Posts\Domain\Queries\GetPost;
+use Weblog\Posts\Application\QueryHandlers\GetPaginatedPostHandler;
+use Weblog\Posts\Application\QueryHandlers\GetPostHandler;
+use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Repositories\TagRepositoryInterface;
+use Weblog\Posts\Infrastructure\Eloquent\Repositories\EloquentPostRepository;
+use Weblog\Posts\Infrastructure\Eloquent\Repositories\EloquentTagRepository;
 
 class PostServiceProvider extends ServiceProvider
 {

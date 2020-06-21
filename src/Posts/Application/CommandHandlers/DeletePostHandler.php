@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Posts\Application\CommandHandlers;
+namespace Weblog\Posts\Application\CommandHandlers;
 
 use Illuminate\Log\Logger;
-use src\Posts\Domain\Commands\DeletePost;
-use src\Posts\Domain\Exceptions\CannotDeletePostException;
-use src\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Commands\DeletePost;
+use Weblog\Posts\Domain\Exceptions\CannotDeletePostException;
+use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
 
 final class DeletePostHandler
 {

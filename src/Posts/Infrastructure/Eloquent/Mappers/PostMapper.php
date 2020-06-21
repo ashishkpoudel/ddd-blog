@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Posts\Infrastructure\Eloquent\Mappers;
+namespace Weblog\Posts\Infrastructure\Eloquent\Mappers;
 
-use src\Posts\Domain\Models\Post;
-use src\Posts\Domain\Models\PostInterface;
-use src\Posts\Domain\ValueObjects\PostId;
-use src\Users\Domain\ValueObjects\UserId;
+use Weblog\Posts\Domain\Models\Post;
+use Weblog\Posts\Domain\Models\PostInterface;
+use Weblog\Posts\Domain\ValueObjects\PostId;
+use Weblog\Users\Domain\ValueObjects\UserId;
 
 final class PostMapper
 {

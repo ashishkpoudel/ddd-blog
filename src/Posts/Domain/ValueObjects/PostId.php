@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Posts\Domain\ValueObjects;
+namespace Weblog\Posts\Domain\ValueObjects;
 
-use src\Core\ValueObjects\Identity;
+use Weblog\Core\ValueObjects\Identity;
 
 final class PostId extends Identity
 {

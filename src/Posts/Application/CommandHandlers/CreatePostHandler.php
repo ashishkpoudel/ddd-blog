@@ -1,13 +1,13 @@
 <?php
 
-namespace src\Posts\Application\CommandHandlers;
+namespace Weblog\Posts\Application\CommandHandlers;
 
 use Illuminate\Support\Str;
 use Illuminate\Log\Logger;
-use src\Posts\Domain\Commands\CreatePost;
-use src\Posts\Domain\Exceptions\CannotCreatePostException;
-use src\Posts\Domain\Models\Post;
-use src\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Commands\CreatePost;
+use Weblog\Posts\Domain\Exceptions\CannotCreatePostException;
+use Weblog\Posts\Domain\Models\Post;
+use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
 
 final class CreatePostHandler
 {

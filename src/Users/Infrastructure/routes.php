@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::post('login', \src\Users\Infrastructure\Controllers\UserLoginController::class);
+Route::post('login', \Weblog\Users\Infrastructure\Controllers\UserLoginController::class);

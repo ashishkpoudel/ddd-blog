@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Posts\Infrastructure\Http\Requests;
+namespace Weblog\Posts\Infrastructure\Http\Requests;
 
-use src\Core\Http\Requests\BaseFormRequest;
+use Weblog\Core\Http\Requests\BaseFormRequest;
 
 final class PostRequest extends BaseFormRequest
 {

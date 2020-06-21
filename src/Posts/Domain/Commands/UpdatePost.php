@@ -1,10 +1,10 @@
 <?php
 
-namespace src\Posts\Domain\Commands;
+namespace Weblog\Posts\Domain\Commands;
 
-use src\Core\Bus\Command\CommandInterface;
-use src\Posts\Domain\Models\Tag;
-use src\Posts\Domain\ValueObjects\PostId;
+use Weblog\Core\Bus\Command\CommandInterface;
+use Weblog\Posts\Domain\Models\Tag;
+use Weblog\Posts\Domain\ValueObjects\PostId;
 
 final class UpdatePost implements CommandInterface
 {

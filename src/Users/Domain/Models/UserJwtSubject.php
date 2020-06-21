@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Users\Domain\Models;
+namespace Weblog\Users\Domain\Models;
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
 

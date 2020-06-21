@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Users\Infrastructure\Eloquent\Models;
+namespace Weblog\Users\Infrastructure\Eloquent\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Tymon\JWTAuth\Contracts\JWTSubject;

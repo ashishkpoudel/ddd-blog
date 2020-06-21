@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Core\ValueObjects;
+namespace Weblog\Core\ValueObjects;
 
 use Symfony\Component\Uid\Uuid;
 

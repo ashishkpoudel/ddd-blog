@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Core\Exceptions;
+namespace Weblog\Core\Exceptions;
 
 abstract class DomainException extends \RuntimeException
 {
