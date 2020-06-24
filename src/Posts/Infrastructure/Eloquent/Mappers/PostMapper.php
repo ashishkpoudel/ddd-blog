@@ -17,7 +17,7 @@ final class PostMapper
             'slug' => $data['slug'],
             'body' => $data['body'],
             'userId' => UserId::fromString($data['userId']),
-            'publishedAt' => new \DateTime($data['publishedAt']),
+            'publishedAt' => new \DateTimeImmutable($data['publishedAt']),
         ]);
     }
 

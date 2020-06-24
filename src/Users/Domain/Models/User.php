@@ -9,16 +9,16 @@ final class User implements UserInterface
     private UserId $id;
     private string $name;
     private string $emailAddress;
-    private ?\DateTime $emailVerifiedAt;
-    private ?\DateTime $confirmedAt;
+    private ?\DateTimeImmutable $emailVerifiedAt;
+    private ?\DateTimeImmutable $confirmedAt;
     private string $password;
 
     public function __construct(
         UserId $id,
         string $name,
         string $emailAddress,
-        ?\DateTime $emailVerifiedAt,
-        ?\DateTime $confirmedAt,
+        ?\DateTimeImmutable $emailVerifiedAt,
+        ?\DateTimeImmutable $confirmedAt,
         string $password
     ) {
         $this->setId($id);
@@ -65,22 +65,22 @@ final class User implements UserInterface
         $this->emailAddress = $emailAddress;
     }
 
-    public function getEmailVerifiedAt(): ?\DateTime
+    public function getEmailVerifiedAt(): ?\DateTimeImmutable
     {
         return $this->emailVerifiedAt;
     }
 
-    private function setEmailVerifiedAt(?\DateTime $emailVerifiedAt): void
+    private function setEmailVerifiedAt(?\DateTimeImmutable $emailVerifiedAt): void
     {
         $this->emailVerifiedAt = $emailVerifiedAt;
     }
 
-    public function getConfirmedAt(): ?\DateTime
+    public function getConfirmedAt(): ?\DateTimeImmutable
     {
         return $this->confirmedAt;
     }
 
-    private function setConfirmedAt(?\DateTime $confirmedAt): void
+    private function setConfirmedAt(?\DateTimeImmutable $confirmedAt): void
     {
         $this->confirmedAt = $confirmedAt;
     }

@@ -14,8 +14,8 @@ final class UserMapper
             'id' => UserId::fromString($data['id']),
             'name' => $data['name'],
             'emailAddress' => $data['emailAddress'],
-            'emailVerifiedAt' => new \DateTime($data['emailVerifiedAt']),
-            'confirmedAt' => new \DateTime($data['confirmedAt']),
+            'emailVerifiedAt' => new \DateTimeImmutable($data['emailVerifiedAt']),
+            'confirmedAt' => new \DateTimeImmutable($data['confirmedAt']),
             'password' => $data['password'],
         ]);
     }

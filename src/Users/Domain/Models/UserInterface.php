@@ -9,7 +9,7 @@ interface UserInterface
     public function getId(): UserId;
     public function getName(): string;
     public function getEmailAddress(): string;
-    public function getEmailVerifiedAt(): ?\DateTime;
-    public function getConfirmedAt(): ?\DateTime;
+    public function getEmailVerifiedAt(): ?\DateTimeImmutable;
+    public function getConfirmedAt(): ?\DateTimeImmutable;
     public function getPassword(): string;
 }

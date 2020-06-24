@@ -29,7 +29,7 @@ final class CreatePostHandler
                 'title' => $command->title,
                 'slug' => Str::slug($command->title),
                 'body' => $command->body,
-                'publishedAt' => new \DateTime(),
+                'publishedAt' => new \DateTimeImmutable(),
             ]);
 
             $this->postRepository->save($post);

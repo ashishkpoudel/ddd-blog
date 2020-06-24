@@ -13,7 +13,7 @@ final class Post implements PostInterface
     private string $slug;
     private string $body;
     private UserId $userId;
-    private ?\DateTime $publishedAt;
+    private ?\DateTimeImmutable $publishedAt;
 
     /** @var Tag[] */
     private array $tags = [];
@@ -24,7 +24,7 @@ final class Post implements PostInterface
         string $slug,
         string $body,
         UserId $userId,
-        ?\DateTime $publishedAt
+        ?\DateTimeImmutable $publishedAt
     ) {
         $this->setId($id);
         $this->setTitle($title);
@@ -36,7 +36,7 @@ final class Post implements PostInterface
 
     public function markAsPublished(): void
     {
-        $this->publishedAt = new \DateTime();
+        $this->publishedAt = new \DateTimeImmutable();
     }
 
     public function markAsUnpublished(): void
@@ -127,12 +127,12 @@ final class Post implements PostInterface
         $this->userId = $userId;
     }
 
-    public function getPublishedAt(): ?\DateTime
+    public function getPublishedAt(): ?\DateTimeImmutable
     {
         return $this->publishedAt;
     }
 
-    private function setPublishedAt(?\DateTime $publishedAt): void
+    private function setPublishedAt(?\DateTimeImmutable $publishedAt): void
     {
         $this->publishedAt = $publishedAt;
     }

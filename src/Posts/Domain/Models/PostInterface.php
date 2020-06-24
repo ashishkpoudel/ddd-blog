@@ -13,7 +13,7 @@ interface PostInterface
     public function getSlug(): string;
     public function getBody(): string;
     public function getUserId(): UserId;
-    public function getPublishedAt(): ?\DateTime;
+    public function getPublishedAt(): ?\DateTimeImmutable;
 
     /** @return Tag[] */
     public function getTags(): array;

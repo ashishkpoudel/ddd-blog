@@ -18,6 +18,7 @@ final class CreatePostController extends BaseController
     {
         $postId = PostId::new();
         $userId = UserId::fromString($request->user()->id);
+        
         $tagIds = $request->has('tagIds')
             ? array_map(fn($tagId) => TagId::fromString($tagId), $request->input('tagIds'))
             : [];
