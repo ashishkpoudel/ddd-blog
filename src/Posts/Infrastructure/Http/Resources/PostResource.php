@@ -24,6 +24,7 @@ final class PostResource extends JsonResource
             'title' => $data->getTitle(),
             'slug' => $data->getSlug(),
             'body' => $data->getBody(),
+            'tags' => $data->getTags(),
             'publishedAt' => $data->getPublishedAt() ? $data->getPublishedAt()->format('Y-m-d') : null,
         ];
     }

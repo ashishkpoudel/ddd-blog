@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use src\Users\Infrastructure\Eloquent\Models\UserModel;
+use Weblog\Users\Infrastructure\Eloquent\Models\UserModel;
 
 class UserSeeder extends Seeder
 {

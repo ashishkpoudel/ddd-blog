@@ -37,11 +37,4 @@ final class EloquentTagRepository implements TagRepositoryInterface
             TagMapper::toPersistence($tag)
         );
     }
-
-    public function saveMany(array $tags = []): void
-    {
-        foreach ($tags as $tag) {
-            $this->save($tag);
-        }
-    }
 }

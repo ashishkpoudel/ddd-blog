@@ -3,14 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="ef8afdcc-4a38-4fe2-a494-4247d90d54c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_14_090517_create_post_tag_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_14_090517_create_post_tag_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/PostInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/PostInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/PostException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/PostException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepositoryInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/CreatePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/CreatePostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Models/UserInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Models/UserInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Mappers/UserMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Mappers/UserMapper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +162,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/payment-test" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
@@ -193,7 +198,12 @@
       <workItem from="1592739089583" duration="38000" />
       <workItem from="1592782937661" duration="774000" />
       <workItem from="1592918789872" duration="1237000" />
-      <workItem from="1593002808190" duration="2597000" />
+      <workItem from="1593002808190" duration="6295000" />
+      <workItem from="1593066101071" duration="41000" />
+      <workItem from="1593325738660" duration="3324000" />
+      <workItem from="1593845813158" duration="2070000" />
+      <workItem from="1593875864824" duration="2993000" />
+      <workItem from="1594485263893" duration="522000" />
     </task>
     <servers />
   </component>
@@ -214,6 +224,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="278" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592705125859" />
+    <state x="743" y="278" width="424" height="491" key="FileChooserDialogImpl" timestamp="1593066139094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="278" width="424" height="491" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593066139094" />
     <state x="1510" y="118" width="1360" height="728" key="dock-window-1" timestamp="1592261079363">
       <screen x="0" y="0" width="3286" height="728" />
     </state>

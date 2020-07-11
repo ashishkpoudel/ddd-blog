@@ -16,8 +16,8 @@ class CreatePostTagTable extends Migration
         Schema::create('post_tag', function (Blueprint $table) {
             $table->id();
             $table->uuid('postId');
-            $table->uuid('userId');
-            $table->unique(['postId', 'userId'], 'user_post_unique');
+            $table->uuid('tagId');
+            $table->unique(['postId', 'tagId']);
             $table->timestamps();
         });
     }

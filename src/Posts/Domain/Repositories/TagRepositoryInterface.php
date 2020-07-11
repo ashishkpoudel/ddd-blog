@@ -10,6 +10,4 @@ interface TagRepositoryInterface
     public function query(): Builder;
 
     public function save(Tag $tag): void;
-
-    public function saveMany(array $tags): void;
 }

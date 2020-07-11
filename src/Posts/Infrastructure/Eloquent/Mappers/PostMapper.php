@@ -11,7 +11,8 @@ final class PostMapper
 {
     public static function toDomain(array $data = []): PostInterface
     {
-        return app(Post::class, [
+        /** @var PostInterface $post */
+        $post = app(Post::class, [
             'id' => PostId::fromString($data['id']),
             'title' => $data['title'],
             'slug' => $data['slug'],
@@ -19,6 +20,14 @@ final class PostMapper
             'userId' => UserId::fromString($data['userId']),
             'publishedAt' => new \DateTimeImmutable($data['publishedAt']),
         ]);
+
+        if (isset($data['tags'])) {
+            foreach ($data['tags'] as $tag) {
+                $post->addTag(TagMapper::toDomain($tag));
+            }
+        }
+
+        return $post;
     }
 
     public static function toPersistence(PostInterface $post): array

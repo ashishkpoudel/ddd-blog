@@ -2,9 +2,9 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use src\Users\Infrastructure\Eloquent\Models\UserModel;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Weblog\Users\Infrastructure\Eloquent\Models\UserModel;
 
 /*
 |--------------------------------------------------------------------------
