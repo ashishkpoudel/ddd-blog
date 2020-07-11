@@ -11,8 +11,10 @@ final class PostModel extends Model
 
     public $table = self::TABLE;
 
+    protected $keyType = 'string';
+
     protected $casts = [
-        'id' => 'string'
+        'id' => 'string',
     ];
 
     protected $guarded = [];

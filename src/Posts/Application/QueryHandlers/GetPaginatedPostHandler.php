@@ -30,7 +30,7 @@ final class GetPaginatedPostHandler
             $postQuery->where('slug', 'like', '%' . $query->query->filters['slug'] . '%');
         }
 
-        $result = $postQuery->paginate();
+        $result = $postQuery->with('tags')->paginate();
 
         return app(PaginatedResult::class, [
            'items' => collect($result->items())->map(fn($post) => PostMapper::toDomain($post->toArray()))->toArray(),

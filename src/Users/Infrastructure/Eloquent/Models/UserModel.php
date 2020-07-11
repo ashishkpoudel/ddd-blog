@@ -11,6 +11,8 @@ final class UserModel extends Authenticatable implements JWTSubject
 
     protected $table = self::TABLE;
 
+    protected $keyType = 'string';
+
     protected $casts = [
         'id' => 'string'
     ];

@@ -3,19 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ef8afdcc-4a38-4fe2-a494-4247d90d54c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TagFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_14_090517_create_post_tag_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_14_090517_create_post_tag_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/PostException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Exceptions/PostException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/PostModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/PostModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/TagModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/TagModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +198,7 @@
       <workItem from="1593325738660" duration="3324000" />
       <workItem from="1593845813158" duration="2070000" />
       <workItem from="1593875864824" duration="2993000" />
-      <workItem from="1594485263893" duration="522000" />
+      <workItem from="1594485263893" duration="8014000" />
     </task>
     <servers />
   </component>

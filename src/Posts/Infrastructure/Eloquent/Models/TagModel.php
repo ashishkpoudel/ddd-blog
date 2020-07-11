@@ -10,6 +10,8 @@ final class TagModel extends Model
 
     protected $table = self::TABLE;
 
+    protected $keyType = 'string';
+
     protected $casts = [
         'id' => 'string',
     ];

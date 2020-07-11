@@ -4,6 +4,7 @@
 
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Symfony\Component\Uid\Uuid;
 use Weblog\Users\Infrastructure\Eloquent\Models\UserModel;
 
 /*
@@ -19,8 +20,8 @@ use Weblog\Users\Infrastructure\Eloquent\Models\UserModel;
 
 $factory->define(UserModel::class, function (Faker $faker) {
     return [
-        'id' => Str::uuid(),
-        'name' => $faker->name,
+        'id' => (string) Uuid::v4(),
+        'name' => $faker->title,
         'emailAddress' => $faker->unique()->safeEmail,
         'emailVerifiedAt' => now(),
         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
