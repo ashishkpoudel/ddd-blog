@@ -17,15 +17,16 @@ final class UpdatePostHandler
 
     public function handle(UpdatePost $command): void
     {
+        // introduce post repository update method and use it
         $post = $this->postRepository->query()->findOrFail($command->postId->getValue());
 
-        if ($command->title !== null) {
-            $post->title = $command->title;
-            $post->slug = Str::slug($command->title);
+        if ($command->getTitle()) {
+            $post->title = $command->getTitle();
+            $post->slug = Str::slug($command->getTitle());
         }
 
-        if ($command->body !== null) {
-            $post->body = $command->body;
+        if ($command->getBody()) {
+            $post->body = $command->getBody();
         }
 
         $post->save();

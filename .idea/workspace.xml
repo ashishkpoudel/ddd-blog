@@ -7,19 +7,15 @@
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/PublishPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/PublishPostHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/PostServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/PostServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/CreatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/CreatePost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/DeletePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/DeletePost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/PublishPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/PublishPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Queries/GetPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Queries/GetPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/CreatePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/CreatePostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Users/Application/QueryHandlers/GetUserAuthTokenByEmailHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/QueryHandlers/GetUserAuthTokenByEmailHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Application/Services/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/Services/AuthService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Repositories/UserRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/UserServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/UserServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Queries/GetUserAuthTokenByEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Queries/GetUserAuthTokenByEmail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

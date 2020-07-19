@@ -7,10 +7,15 @@ use Weblog\Posts\Domain\ValueObjects\PostId;
 
 final class PublishPost implements CommandInterface
 {
-    public PostId $postId;
+    private string $postId;
 
-    public function __construct(PostId $postId)
+    public function __construct(string $postId)
     {
         $this->postId = $postId;
+    }
+
+    public function getPostId(): PostId
+    {
+        return PostId::fromString($this->postId);
     }
 }

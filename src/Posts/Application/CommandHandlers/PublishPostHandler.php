@@ -16,7 +16,7 @@ final class PublishPostHandler
 
     public function handle(PublishPost $publishPost): void
     {
-        $post = $this->postRepository->findByIdOrFail($publishPost->postId);
+        $post = $this->postRepository->findByIdOrFail($publishPost->getPostId());
         $post->markAsPublished();
         $this->postRepository->save($post);
     }

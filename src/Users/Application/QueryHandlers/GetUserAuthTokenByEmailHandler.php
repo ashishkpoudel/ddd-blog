@@ -23,7 +23,7 @@ final class GetUserAuthTokenByEmailHandler
 
     public function handle(GetUserAuthTokenByEmail $query): array
     {
-        $user = $this->userRepository->findByEmailAddress($query->emailAddress);
+        $user = $this->userRepository->findByEmailAddress($query->getEmailAddress());
 
         return [
             'accessToken' => $this->jwt->fromSubject(new UserJwtSubject($user->getId()->getValue())),

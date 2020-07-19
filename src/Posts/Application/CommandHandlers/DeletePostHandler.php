@@ -16,7 +16,7 @@ final class DeletePostHandler
 
     public function handle(DeletePost $command): void
     {
-        $post = $this->postRepository->query()->findOrFail($command->postId->getValue());
+        $post = $this->postRepository->query()->findOrFail($command->getPostId()->getValue());
         $post->delete();
     }
 }

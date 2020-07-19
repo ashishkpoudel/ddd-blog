@@ -19,11 +19,11 @@ final class CreatePostHandler
     public function handle(CreatePost $command): void
     {
         $post = app(Post::class, [
-            'id' => $command->postId,
-            'userId' => $command->userId,
-            'title' => $command->title,
-            'slug' => Str::slug($command->title),
-            'body' => $command->body,
+            'id' => $command->getPostId()->getValue(),
+            'userId' => $command->getPostId()->getValue(),
+            'title' => $command->getTitle(),
+            'slug' => Str::slug($command->getTitle()),
+            'body' => $command->getBody(),
             'publishedAt' => new \DateTimeImmutable(),
         ]);
 

@@ -17,6 +17,6 @@ final class GetPostHandler
 
     public function handle(GetPost $query): PostInterface
     {
-        return $this->postRepository->findByIdOrFail($query->postId);
+        return $this->postRepository->findByIdOrFail($query->getPostId());
     }
 }
