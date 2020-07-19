@@ -4,11 +4,11 @@ namespace Weblog\Posts\Infrastructure\Eloquent\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
 use Weblog\Posts\Domain\Models\Tag;
-use Weblog\Posts\Domain\Repositories\TagRepositoryInterface;
+use Weblog\Posts\Domain\Repositories\TagRepository;
 use Weblog\Posts\Infrastructure\Eloquent\Mappers\TagMapper;
 use Weblog\Posts\Infrastructure\Eloquent\Models\TagModel;
 
-final class EloquentTagRepository implements TagRepositoryInterface
+final class EloquentTagRepository implements TagRepository
 {
     private TagModel $tagModel;
 

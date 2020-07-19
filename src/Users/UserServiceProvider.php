@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Weblog\Users\Domain\Queries\GetUserAuthTokenByEmail;
 use Weblog\Users\Application\QueryHandlers\GetUserAuthTokenByEmailHandler;
-use Weblog\Users\Domain\Repositories\UserRepositoryInterface;
+use Weblog\Users\Domain\Repositories\UserRepository;
 use Weblog\Users\Infrastructure\Eloquent\Repositories\EloquentUserRepository;
 
 final class UserServiceProvider extends ServiceProvider
@@ -25,6 +25,6 @@ final class UserServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind(UserRepositoryInterface::class, EloquentUserRepository::class);
+        $this->app->bind(UserRepository::class, EloquentUserRepository::class);
     }
 }

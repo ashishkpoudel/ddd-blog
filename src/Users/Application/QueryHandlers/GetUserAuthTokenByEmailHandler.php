@@ -4,7 +4,7 @@ namespace Weblog\Users\Application\QueryHandlers;
 
 use Illuminate\Config\Repository as Config;
 use Tymon\JWTAuth\JWT;
-use Weblog\Users\Domain\Repositories\UserRepositoryInterface;
+use Weblog\Users\Domain\Repositories\UserRepository;
 use Weblog\Users\Domain\Queries\GetUserAuthTokenByEmail;
 use Weblog\Users\Domain\Models\UserJwtSubject;
 
@@ -12,9 +12,9 @@ final class GetUserAuthTokenByEmailHandler
 {
     private JWT $jwt;
     private Config $config;
-    private UserRepositoryInterface $userRepository;
+    private UserRepository $userRepository;
 
-    public function __construct(JWT $jwt, Config $config, UserRepositoryInterface $userRepository)
+    public function __construct(JWT $jwt, Config $config, UserRepository $userRepository)
     {
         $this->jwt = $jwt;
         $this->config = $config;

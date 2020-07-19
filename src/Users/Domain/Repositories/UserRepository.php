@@ -7,7 +7,7 @@ use Weblog\Users\Domain\Models\User;
 use Weblog\Users\Domain\Models\UserInterface;
 use Weblog\Users\Domain\ValueObjects\UserId;
 
-interface UserRepositoryInterface
+interface UserRepository
 {
     public function query(): Builder;
 

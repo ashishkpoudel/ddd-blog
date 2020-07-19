@@ -4,14 +4,14 @@ namespace Weblog\Posts\Application\QueryHandlers;
 
 use Weblog\Core\Support\PaginatedResult;
 use Weblog\Posts\Domain\Queries\GetPaginatedPost;
-use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Repositories\PostRepository;
 use Weblog\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
 
 final class GetPaginatedPostHandler
 {
-    private PostRepositoryInterface $postRepository;
+    private PostRepository $postRepository;
 
-    public function __construct(PostRepositoryInterface $postRepository)
+    public function __construct(PostRepository $postRepository)
     {
         $this->postRepository = $postRepository;
     }

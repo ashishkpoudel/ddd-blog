@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Weblog\Posts\Domain\Models\PostInterface;
 use Weblog\Posts\Domain\ValueObjects\PostId;
 
-interface PostRepositoryInterface
+interface PostRepository
 {
     public function query(): Builder;
 

@@ -5,12 +5,12 @@ namespace Weblog\Users\Infrastructure\Eloquent\Repositories;
 use Illuminate\Database\Eloquent\Builder;
 use Weblog\Users\Domain\Models\User;
 use Weblog\Users\Domain\Models\UserInterface;
-use Weblog\Users\Domain\Repositories\UserRepositoryInterface;
+use Weblog\Users\Domain\Repositories\UserRepository;
 use Weblog\Users\Domain\ValueObjects\UserId;
 use Weblog\Users\Infrastructure\Eloquent\Mappers\UserMapper;
 use Weblog\Users\Infrastructure\Eloquent\Models\UserModel;
 
-final class EloquentUserRepository implements UserRepositoryInterface
+final class EloquentUserRepository implements UserRepository
 {
     private UserModel $userModel;
 

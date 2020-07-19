@@ -3,13 +3,13 @@
 namespace Weblog\Posts\Application\CommandHandlers;
 
 use Weblog\Posts\Domain\Commands\DeletePost;
-use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Repositories\PostRepository;
 
 final class DeletePostHandler
 {
-    private PostRepositoryInterface $postRepository;
+    private PostRepository $postRepository;
 
-    public function __construct(PostRepositoryInterface $postRepository)
+    public function __construct(PostRepository $postRepository)
     {
         $this->postRepository = $postRepository;
     }

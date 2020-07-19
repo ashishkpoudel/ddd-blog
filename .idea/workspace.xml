@@ -3,14 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="ef8afdcc-4a38-4fe2-a494-4247d90d54c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TagFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/PublishPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/PublishPostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPaginatedPostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/PostModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/PostModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/TagModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Models/TagModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Models/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPostHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/TagRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/PostServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/PostServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Application/QueryHandlers/GetUserAuthTokenByEmailHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/QueryHandlers/GetUserAuthTokenByEmailHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Application/Services/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/Services/AuthService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Repositories/UserRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Infrastructure/Eloquent/Repositories/EloquentUserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/UserServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/UserServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +207,8 @@
       <workItem from="1593325738660" duration="3324000" />
       <workItem from="1593845813158" duration="2070000" />
       <workItem from="1593875864824" duration="2993000" />
-      <workItem from="1594485263893" duration="8014000" />
+      <workItem from="1594485263893" duration="9249000" />
+      <workItem from="1595149044067" duration="930000" />
     </task>
     <servers />
   </component>

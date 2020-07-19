@@ -5,20 +5,20 @@ namespace Weblog\Posts\Infrastructure\Eloquent\Repositories;
 use Illuminate\Database\Eloquent\Builder;
 use Weblog\Posts\Domain\Models\PostInterface;
 use Weblog\Posts\Domain\Models\Tag;
-use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
-use Weblog\Posts\Domain\Repositories\TagRepositoryInterface;
+use Weblog\Posts\Domain\Repositories\PostRepository;
+use Weblog\Posts\Domain\Repositories\TagRepository;
 use Weblog\Posts\Domain\ValueObjects\PostId;
 use Weblog\Posts\Infrastructure\Eloquent\Mappers\PostMapper;
 use Weblog\Posts\Infrastructure\Eloquent\Mappers\TagMapper;
 use Weblog\Posts\Infrastructure\Eloquent\Models\PostModel;
 use Weblog\Posts\Infrastructure\Eloquent\Models\TagModel;
 
-final class EloquentPostRepository implements PostRepositoryInterface
+final class EloquentPostRepository implements PostRepository
 {
     private PostModel $model;
-    private TagRepositoryInterface $tagRepository;
+    private TagRepository $tagRepository;
 
-    public function __construct(PostModel $model, TagRepositoryInterface $tagRepository)
+    public function __construct(PostModel $model, TagRepository $tagRepository)
     {
         $this->model = $model;
         $this->tagRepository = $tagRepository;

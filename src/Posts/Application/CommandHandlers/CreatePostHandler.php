@@ -5,13 +5,13 @@ namespace Weblog\Posts\Application\CommandHandlers;
 use Illuminate\Support\Str;
 use Weblog\Posts\Domain\Commands\CreatePost;
 use Weblog\Posts\Domain\Models\Post;
-use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
+use Weblog\Posts\Domain\Repositories\PostRepository;
 
 final class CreatePostHandler
 {
-    private PostRepositoryInterface $postRepository;
+    private PostRepository $postRepository;
 
-    public function __construct(PostRepositoryInterface $postRepository)
+    public function __construct(PostRepository $postRepository)
     {
         $this->postRepository = $postRepository;
     }

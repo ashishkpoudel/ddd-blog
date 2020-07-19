@@ -3,14 +3,14 @@
 namespace Weblog\Users\Application\Services;
 
 use Illuminate\Hashing\HashManager;
-use Weblog\Users\Domain\Repositories\UserRepositoryInterface;
+use Weblog\Users\Domain\Repositories\UserRepository;
 
 final class AuthService
 {
     private HashManager $hash;
-    private UserRepositoryInterface $userRepository;
+    private UserRepository $userRepository;
 
-    public function __construct(HashManager $hash, UserRepositoryInterface $userRepository)
+    public function __construct(HashManager $hash, UserRepository $userRepository)
     {
         $this->hash = $hash;
         $this->userRepository = $userRepository;

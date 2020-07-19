@@ -15,8 +15,8 @@ use Weblog\Posts\Domain\Queries\GetPaginatedPost;
 use Weblog\Posts\Domain\Queries\GetPost;
 use Weblog\Posts\Application\QueryHandlers\GetPaginatedPostHandler;
 use Weblog\Posts\Application\QueryHandlers\GetPostHandler;
-use Weblog\Posts\Domain\Repositories\PostRepositoryInterface;
-use Weblog\Posts\Domain\Repositories\TagRepositoryInterface;
+use Weblog\Posts\Domain\Repositories\PostRepository;
+use Weblog\Posts\Domain\Repositories\TagRepository;
 use Weblog\Posts\Infrastructure\Eloquent\Repositories\EloquentPostRepository;
 use Weblog\Posts\Infrastructure\Eloquent\Repositories\EloquentTagRepository;
 
@@ -43,7 +43,7 @@ class PostServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind(PostRepositoryInterface::class, EloquentPostRepository::class);
-        $this->app->bind(TagRepositoryInterface::class, EloquentTagRepository::class);
+        $this->app->bind(PostRepository::class, EloquentPostRepository::class);
+        $this->app->bind(TagRepository::class, EloquentTagRepository::class);
     }
 }
