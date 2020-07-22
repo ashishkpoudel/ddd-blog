@@ -2,7 +2,7 @@
 
 namespace Weblog\Posts\Infrastructure\Eloquent\Mappers;
 
-use Weblog\Posts\Domain\Models\Tag;
+use Weblog\Posts\Domain\QueryResults\Tag;
 use Weblog\Posts\Domain\ValueObjects\TagId;
 
 final class TagMapper
@@ -13,13 +13,5 @@ final class TagMapper
             'id' => TagId::fromString($data['id']),
             'name' => $data['name'],
         ]);
-    }
-
-    public static function toPersistence(Tag $tag): array
-    {
-        return [
-            'id' => $tag->getId(),
-            'name' => $tag->getName(),
-        ];
     }
 }

@@ -3,7 +3,7 @@
 namespace Weblog\Posts\Infrastructure\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Weblog\Posts\Domain\Models\PostInterface;
+use Weblog\Posts\Domain\QueryResults\Post;
 
 final class PostResource extends JsonResource
 {
@@ -15,7 +15,7 @@ final class PostResource extends JsonResource
      */
     public function toArray($request)
     {
-        /** @var PostInterface $data */
+        /** @var Post $data */
         $data = $this;
 
         return [

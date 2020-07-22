@@ -3,7 +3,7 @@
 namespace Weblog\Posts\Infrastructure\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Weblog\Posts\Domain\Models\TagInterface;
+use Weblog\Posts\Domain\QueryResults\Tag as TagResult;
 
 final class TagResource extends JsonResource
 {
@@ -15,7 +15,7 @@ final class TagResource extends JsonResource
      */
     public function toArray($request)
     {
-        /** @var TagInterface $data */
+        /** @var TagResult $data */
         $data = $this;
 
         return [

@@ -3,19 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="ef8afdcc-4a38-4fe2-a494-4247d90d54c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/CreatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/DeletePostHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/PublishPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/PublishPostHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/CommandHandlers/UpdatePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Application/QueryHandlers/GetPostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/CreatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/CreatePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/DeletePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/DeletePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/PublishPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/PublishPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Commands/UpdatePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Queries/GetPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Queries/GetPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/CreatePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Controllers/CreatePostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Application/QueryHandlers/GetUserAuthTokenByEmailHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Application/QueryHandlers/GetUserAuthTokenByEmailHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Domain/Queries/GetUserAuthTokenByEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Domain/Queries/GetUserAuthTokenByEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Events/PostPublished.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Events/PostPublished.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Events/PostUnpublished.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Events/PostUnpublished.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/PostInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Models/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Models/TagInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Domain/Repositories/PostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/PostMapper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/TagMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Mappers/TagMapper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Eloquent/Repositories/EloquentTagRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/PostResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/TagResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Infrastructure/Http/Resources/TagResource.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +207,8 @@
       <workItem from="1593875864824" duration="2993000" />
       <workItem from="1594485263893" duration="9249000" />
       <workItem from="1595149044067" duration="930000" />
+      <workItem from="1595362291618" duration="4000" />
+      <workItem from="1595421954040" duration="7046000" />
     </task>
     <servers />
   </component>
@@ -221,10 +225,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="317" width="381" height="460" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592354579087" />
-    <state x="693" y="278" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592705125859">
+    <state x="693" y="278" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1595436038892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="693" y="278" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592705125859" />
+    <state x="693" y="278" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595436038892" />
     <state x="743" y="278" width="424" height="491" key="FileChooserDialogImpl" timestamp="1593066139094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

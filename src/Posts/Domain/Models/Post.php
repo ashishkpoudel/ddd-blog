@@ -5,8 +5,9 @@ namespace Weblog\Posts\Domain\Models;
 use Weblog\Posts\Domain\ValueObjects\PostId;
 use Weblog\Posts\Domain\ValueObjects\TagId;
 use Weblog\Users\Domain\ValueObjects\UserId;
+use Weblog\Posts\Domain\QueryResults\Tag;
 
-final class Post implements PostInterface
+final class Post
 {
     private PostId $id;
     private string $title;
@@ -44,7 +45,7 @@ final class Post implements PostInterface
         $this->publishedAt = null;
     }
 
-    public function addTag(TagInterface $tag): void
+    public function addTag(Tag $tag): void
     {
         $this->tags[] = $tag;
     }
@@ -59,19 +60,9 @@ final class Post implements PostInterface
         }
     }
 
-    public function getId(): PostId
-    {
-        return $this->id;
-    }
-
     private function setId(PostId $id): void
     {
         $this->id = $id;
-    }
-
-    public function getTitle(): string
-    {
-        return $this->title;
     }
 
     private function setTitle(string $title): void
@@ -85,11 +76,6 @@ final class Post implements PostInterface
         $this->title = $title;
     }
 
-    public function getSlug(): string
-    {
-        return $this->slug;
-    }
-
     private function setSlug(string $slug): void
     {
         if (strlen($slug) === 0) {
@@ -99,11 +85,6 @@ final class Post implements PostInterface
         }
 
         $this->slug = $slug;
-    }
-
-    public function getBody(): string
-    {
-        return $this->body;
     }
 
     private function setBody(string $body): void
@@ -117,19 +98,9 @@ final class Post implements PostInterface
         $this->body = $body;
     }
 
-    public function getUserId(): UserId
-    {
-        return $this->userId;
-    }
-
     private function setUserId(UserId $userId): void
     {
         $this->userId = $userId;
-    }
-
-    public function getPublishedAt(): ?\DateTimeImmutable
-    {
-        return $this->publishedAt;
     }
 
     private function setPublishedAt(?\DateTimeImmutable $publishedAt): void
@@ -137,11 +108,16 @@ final class Post implements PostInterface
         $this->publishedAt = $publishedAt;
     }
 
-    /**
-     * @return Tag[]
-     */
-    public function getTags(): array
+    public function mappedData(): array
     {
-        return $this->tags;
+        return [
+            'id' => $this->id->getValue(),
+            'title' => $this->title,
+            'slug' => $this->slug,
+            'body' => $this->body,
+            'userId' => $this->userId->getValue(),
+            'publishedAt' => $this->publishedAt ? $this->publishedAt->format('Y-m-d') : null,
+            'tagIds' => array_map(fn(Tag $tag) => $tag->getId(), $this->tags),
+        ];
     }
 }

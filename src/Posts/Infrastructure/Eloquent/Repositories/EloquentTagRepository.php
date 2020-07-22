@@ -5,7 +5,7 @@ namespace Weblog\Posts\Infrastructure\Eloquent\Repositories;
 use Illuminate\Database\Eloquent\Builder;
 use Weblog\Posts\Domain\Models\Tag;
 use Weblog\Posts\Domain\Repositories\TagRepository;
-use Weblog\Posts\Infrastructure\Eloquent\Mappers\TagMapper;
+use Weblog\Posts\Domain\ValueObjects\TagId;
 use Weblog\Posts\Infrastructure\Eloquent\Models\TagModel;
 
 final class EloquentTagRepository implements TagRepository
@@ -24,17 +24,17 @@ final class EloquentTagRepository implements TagRepository
 
     public function save(Tag $tag): void
     {
-        $model = $this->query()->find($tag->getId()->getValue());
+        $data = $tag->mappedData();
+
+        $model = $this->query()->find(TagId::fromString($data['id']));
 
         if ($model) {
-            $model->update(
-                TagMapper::toPersistence($tag)
-            );
+            $model->update($data);
             return;
         }
 
         $this->query()->create(
-            TagMapper::toPersistence($tag)
+            $data
         );
     }
 }

@@ -4,6 +4,7 @@ namespace Weblog\Posts\Application\CommandHandlers;
 
 use Illuminate\Support\Str;
 use Weblog\Posts\Domain\Commands\UpdatePost;
+use Weblog\Posts\Domain\Models\Post;
 use Weblog\Posts\Domain\Repositories\PostRepository;
 
 final class UpdatePostHandler
@@ -17,18 +18,15 @@ final class UpdatePostHandler
 
     public function handle(UpdatePost $command): void
     {
-        // introduce post repository update method and use it
-        $post = $this->postRepository->query()->findOrFail($command->postId->getValue());
+        $post = $this->postRepository->findByIdOrFail($command->getPostId());
 
-        if ($command->getTitle()) {
-            $post->title = $command->getTitle();
-            $post->slug = Str::slug($command->getTitle());
-        }
+        $updatedPost = app(Post::class, [
+            'id' => $post->getId(),
+            'title' => $command->getTitle() ?? $post->getTitle(),
+            'slug' => $command->getTitle() ? Str::slug($command->getTitle()) : $post->getSlug(),
+            'body' => $command->getBody() ?? $post->getBody(),
+        ]);
 
-        if ($command->getBody()) {
-            $post->body = $command->getBody();
-        }
-
-        $post->save();
+        $this->postRepository->save($updatedPost);
     }
 }
